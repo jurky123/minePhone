@@ -1,0 +1,11 @@
+{
+  "loader": "forge:obj",
+  "model": "browserlink:models/block/television.obj",
+  "automatic_culling": false,
+  "shade_quads": true,
+  "flip_v": false,
+  "ambientocclusion": false,
+  "textures": {
+    "particle": "browserlink:block/tv_body_atlas"
+  }
+}

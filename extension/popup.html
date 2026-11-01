@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>BrowserLink</title>
+<link rel="stylesheet" href="popup.css"></head><body>
+<header><span class="mark">B</span><div><h1>BrowserLink</h1><p>连接当前 Chrome 窗口到 Minecraft</p></div></header>
+<p>无需配对码。先连接当前页，之后可在游戏里切换本窗口的网页标签。</p>
+<label for="fps">画面更新</label><select id="fps"><option value="10">10 FPS · 节省资源</option><option value="15">15 FPS</option><option value="20">20 FPS</option><option value="30" selected>30 FPS · 更流畅</option></select>
+<label for="quality">清晰度上限</label><select id="quality"><option value="720">720p · 节省资源</option><option value="1080">1080p</option><option value="1440" selected>1440p · 清晰</option></select>
+<label for="captureFormat">画面模式</label><select id="captureFormat"><option value="jpeg" selected>视频流畅 · JPEG</option><option value="png">文字无损 · PNG（开销更高）</option></select>
+<p>观看视频建议 720p / 30 FPS / JPEG。状态应显示“标签页视频流”；显示兼容截屏时请重新点击连接。</p>
+<div class="actions"><button id="connect">连接当前标签页</button><button id="stop" class="secondary">断开</button></div>
+<div class="actions"><button id="keepalive" class="secondary">开启 / 关闭后台流畅模式</button></div>
+<p>后台视频卡顿时开启，保留辅助小窗再返回游戏。可尝试原版 F11 全屏；效果取决于系统与显卡。关闭小窗即可恢复，切换网页后需重新开启。</p>
+<p id="status" role="status">正在读取状态…</p>
+<footer>仅连接本机 · 不复制 Cookie<br>声音来自最近交互的电视、电脑或手机。无游戏声源时恢复 Chrome 播放；切换新标签可能需再次点连接以授权视频流和音频。<br>Forge 1.20.1 / BrowserLink 0.9.4</footer>
+<script src="popup.js"></script></body></html>
+

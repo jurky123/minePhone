@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "BrowserLink for Minecraft",
+  "version": "0.9.4",
+  "description": "Share a selected, already signed-in browser tab with your local Minecraft phone or computer.",
+  "minimum_chrome_version": "116",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "offscreen",
+    "debugger",
+    "storage",
+    "tabCapture"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Connect this tab to Minecraft"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; connect-src ws://127.0.0.1:19285"
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwFDbFBeTtCF35cKrQ52S1F5voZdkny2xYvCI7ZPjAYG32tBjfWQZVSawZv4H163EFy8Oy8gvSRMCywkNFjy5aC/JaLeX+I/v3wTeO+uV0RpuwhOTMq41vZz16TdXyMaGqrR2W3ngW60l2wiN9iANE+bonop2xO/n7TLyeYhB79BnCPNSxghM2OgQQj/Qi6ADGADm7FPie4xvKJMohStobgxkrLQ3XM0INZ8WLfiPvfBaDYY/BURHrXjCuaiJV+BTTTJOUUIbwSJuh2bI/O0P3cCzyST7qC9R+VNAbHHotxheBbNUJ/Ts4KjN1zRQMpjNd2L/5bUuNRY+SzavqFUptwIDAQAB"
+}

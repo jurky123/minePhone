@@ -1,0 +1,2709 @@
+{
+  "unit_m": 0.03125,
+  "objects": [
+    {
+      "name": "B00 lower hub",
+      "group": "Base",
+      "center_grid": [
+        0,
+        0,
+        4.05
+      ],
+      "size_grid": [
+        5,
+        5,
+        1.8
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "dark"
+    },
+    {
+      "name": "B01 top hub",
+      "group": "Base",
+      "center_grid": [
+        0,
+        0,
+        5.05
+      ],
+      "size_grid": [
+        4.2,
+        4.2,
+        0.6
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "case_light"
+    },
+    {
+      "name": "B1 spoke step 1",
+      "group": "Base",
+      "center_grid": [
+        2.632990618166809e-16,
+        -4.3,
+        4.1
+      ],
+      "size_grid": [
+        5.6,
+        2.2,
+        1.3
+      ],
+      "rotation_z_degrees": -90,
+      "palette": "case_light"
+    },
+    {
+      "name": "B1 spoke step 2",
+      "group": "Base",
+      "center_grid": [
+        4.990435706525465e-16,
+        -8.15,
+        3.65
+      ],
+      "size_grid": [
+        3.2,
+        1.9,
+        1.3
+      ],
+      "rotation_z_degrees": -90,
+      "palette": "case"
+    },
+    {
+      "name": "B1 spoke step 3",
+      "group": "Base",
+      "center_grid": [
+        6.184466335694133e-16,
+        -10.1,
+        3.15
+      ],
+      "size_grid": [
+        1.8,
+        1.6,
+        1.3
+      ],
+      "rotation_z_degrees": -90,
+      "palette": "case"
+    },
+    {
+      "name": "B1 spoke teal inset",
+      "group": "Base",
+      "center_grid": [
+        3.8576374173141627e-16,
+        -6.3,
+        4.79
+      ],
+      "size_grid": [
+        5,
+        0.55,
+        0.12
+      ],
+      "rotation_z_degrees": -90,
+      "palette": "cyan_dark"
+    },
+    {
+      "name": "B1 caster fork",
+      "group": "Base",
+      "center_grid": [
+        6.735557395310443e-16,
+        -11.0,
+        2.35
+      ],
+      "size_grid": [
+        2,
+        1.9,
+        2
+      ],
+      "rotation_z_degrees": -90,
+      "palette": "case_light"
+    },
+    {
+      "name": "B1 wheel -1 tread",
+      "group": "Base",
+      "center_grid": [
+        -1.1499999999999992,
+        -11.0,
+        1.2
+      ],
+      "size_grid": [
+        2.7,
+        0.85,
+        2.4
+      ],
+      "rotation_z_degrees": -90,
+      "palette": "rubber"
+    },
+    {
+      "name": "B1 wheel -1 center",
+      "group": "Base",
+      "center_grid": [
+        -1.1499999999999992,
+        -11.0,
+        1.2
+      ],
+      "size_grid": [
+        3.2,
+        0.85,
+        1.4
+      ],
+      "rotation_z_degrees": -90,
+      "palette": "rubber"
+    },
+    {
+      "name": "B1 wheel -1 hub",
+      "group": "Base",
+      "center_grid": [
+        -1.6099999999999992,
+        -11.0,
+        1.2
+      ],
+      "size_grid": [
+        1.05,
+        0.14,
+        1.05
+      ],
+      "rotation_z_degrees": -90,
+      "palette": "edge"
+    },
+    {
+      "name": "B1 wheel 1 tread",
+      "group": "Base",
+      "center_grid": [
+        1.1500000000000006,
+        -11.0,
+        1.2
+      ],
+      "size_grid": [
+        2.7,
+        0.85,
+        2.4
+      ],
+      "rotation_z_degrees": -90,
+      "palette": "rubber"
+    },
+    {
+      "name": "B1 wheel 1 center",
+      "group": "Base",
+      "center_grid": [
+        1.1500000000000006,
+        -11.0,
+        1.2
+      ],
+      "size_grid": [
+        3.2,
+        0.85,
+        1.4
+      ],
+      "rotation_z_degrees": -90,
+      "palette": "rubber"
+    },
+    {
+      "name": "B1 wheel 1 hub",
+      "group": "Base",
+      "center_grid": [
+        1.6100000000000005,
+        -11.0,
+        1.2
+      ],
+      "size_grid": [
+        1.05,
+        0.14,
+        1.05
+      ],
+      "rotation_z_degrees": -90,
+      "palette": "edge"
+    },
+    {
+      "name": "B2 spoke step 1",
+      "group": "Base",
+      "center_grid": [
+        4.08954302006916,
+        -1.3287730758122738,
+        4.1
+      ],
+      "size_grid": [
+        5.6,
+        2.2,
+        1.3
+      ],
+      "rotation_z_degrees": -18,
+      "palette": "case_light"
+    },
+    {
+      "name": "B2 spoke step 2",
+      "group": "Base",
+      "center_grid": [
+        7.751110607805502,
+        -2.5184885041558216,
+        3.65
+      ],
+      "size_grid": [
+        3.2,
+        1.9,
+        1.3
+      ],
+      "rotation_z_degrees": -18,
+      "palette": "case"
+    },
+    {
+      "name": "B2 spoke step 3",
+      "group": "Base",
+      "center_grid": [
+        9.60567081458105,
+        -3.1210716431869687,
+        3.15
+      ],
+      "size_grid": [
+        1.8,
+        1.6,
+        1.3
+      ],
+      "rotation_z_degrees": -18,
+      "palette": "case"
+    },
+    {
+      "name": "B2 spoke teal inset",
+      "group": "Base",
+      "center_grid": [
+        5.991656052659467,
+        -1.9468070645621685,
+        4.79
+      ],
+      "size_grid": [
+        5,
+        0.55,
+        0.12
+      ],
+      "rotation_z_degrees": -18,
+      "palette": "cyan_dark"
+    },
+    {
+      "name": "B2 caster fork",
+      "group": "Base",
+      "center_grid": [
+        10.461621679246688,
+        -3.3991869381244215,
+        2.35
+      ],
+      "size_grid": [
+        2,
+        1.9,
+        2
+      ],
+      "rotation_z_degrees": -18,
+      "palette": "case_light"
+    },
+    {
+      "name": "B2 wheel -1 tread",
+      "group": "Base",
+      "center_grid": [
+        10.106252135715499,
+        -4.492901931863848,
+        1.2
+      ],
+      "size_grid": [
+        2.7,
+        0.85,
+        2.4
+      ],
+      "rotation_z_degrees": -18,
+      "palette": "rubber"
+    },
+    {
+      "name": "B2 wheel -1 center",
+      "group": "Base",
+      "center_grid": [
+        10.106252135715499,
+        -4.492901931863848,
+        1.2
+      ],
+      "size_grid": [
+        3.2,
+        0.85,
+        1.4
+      ],
+      "rotation_z_degrees": -18,
+      "palette": "rubber"
+    },
+    {
+      "name": "B2 wheel -1 hub",
+      "group": "Base",
+      "center_grid": [
+        9.964104318303024,
+        -4.930387929359619,
+        1.2
+      ],
+      "size_grid": [
+        1.05,
+        0.14,
+        1.05
+      ],
+      "rotation_z_degrees": -18,
+      "palette": "edge"
+    },
+    {
+      "name": "B2 wheel 1 tread",
+      "group": "Base",
+      "center_grid": [
+        10.816991222777878,
+        -2.305471944384995,
+        1.2
+      ],
+      "size_grid": [
+        2.7,
+        0.85,
+        2.4
+      ],
+      "rotation_z_degrees": -18,
+      "palette": "rubber"
+    },
+    {
+      "name": "B2 wheel 1 center",
+      "group": "Base",
+      "center_grid": [
+        10.816991222777878,
+        -2.305471944384995,
+        1.2
+      ],
+      "size_grid": [
+        3.2,
+        0.85,
+        1.4
+      ],
+      "rotation_z_degrees": -18,
+      "palette": "rubber"
+    },
+    {
+      "name": "B2 wheel 1 hub",
+      "group": "Base",
+      "center_grid": [
+        10.959139040190353,
+        -1.8679859468892244,
+        1.2
+      ],
+      "size_grid": [
+        1.05,
+        0.14,
+        1.05
+      ],
+      "rotation_z_degrees": -18,
+      "palette": "edge"
+    },
+    {
+      "name": "B3 spoke step 1",
+      "group": "Base",
+      "center_grid": [
+        2.5274765848576344,
+        3.4787730758122737,
+        4.1
+      ],
+      "size_grid": [
+        5.6,
+        2.2,
+        1.3
+      ],
+      "rotation_z_degrees": 54,
+      "palette": "case_light"
+    },
+    {
+      "name": "B3 spoke step 2",
+      "group": "Base",
+      "center_grid": [
+        4.7904498061836565,
+        6.593488504155822,
+        3.65
+      ],
+      "size_grid": [
+        3.2,
+        1.9,
+        1.3
+      ],
+      "rotation_z_degrees": 54,
+      "palette": "case"
+    },
+    {
+      "name": "B3 spoke step 3",
+      "group": "Base",
+      "center_grid": [
+        5.936631048153979,
+        8.171071643186968,
+        3.15
+      ],
+      "size_grid": [
+        1.8,
+        1.6,
+        1.3
+      ],
+      "rotation_z_degrees": 54,
+      "palette": "case"
+    },
+    {
+      "name": "B3 spoke teal inset",
+      "group": "Base",
+      "center_grid": [
+        3.7030470894425807,
+        5.096807064562169,
+        4.79
+      ],
+      "size_grid": [
+        5,
+        0.55,
+        0.12
+      ],
+      "rotation_z_degrees": 54,
+      "palette": "cyan_dark"
+    },
+    {
+      "name": "B3 caster fork",
+      "group": "Base",
+      "center_grid": [
+        6.465637775217204,
+        8.899186938124423,
+        2.35
+      ],
+      "size_grid": [
+        2,
+        1.9,
+        2
+      ],
+      "rotation_z_degrees": 54,
+      "palette": "case_light"
+    },
+    {
+      "name": "B3 wheel -1 tread",
+      "group": "Base",
+      "center_grid": [
+        7.396007318748394,
+        8.223233897988079,
+        1.2
+      ],
+      "size_grid": [
+        2.7,
+        0.85,
+        2.4
+      ],
+      "rotation_z_degrees": 54,
+      "palette": "rubber"
+    },
+    {
+      "name": "B3 wheel -1 center",
+      "group": "Base",
+      "center_grid": [
+        7.396007318748394,
+        8.223233897988079,
+        1.2
+      ],
+      "size_grid": [
+        3.2,
+        0.85,
+        1.4
+      ],
+      "rotation_z_degrees": 54,
+      "palette": "rubber"
+    },
+    {
+      "name": "B3 wheel -1 hub",
+      "group": "Base",
+      "center_grid": [
+        7.768155136160869,
+        7.952852681933542,
+        1.2
+      ],
+      "size_grid": [
+        1.05,
+        0.14,
+        1.05
+      ],
+      "rotation_z_degrees": 54,
+      "palette": "edge"
+    },
+    {
+      "name": "B3 wheel 1 tread",
+      "group": "Base",
+      "center_grid": [
+        5.535268231686015,
+        9.575139978260767,
+        1.2
+      ],
+      "size_grid": [
+        2.7,
+        0.85,
+        2.4
+      ],
+      "rotation_z_degrees": 54,
+      "palette": "rubber"
+    },
+    {
+      "name": "B3 wheel 1 center",
+      "group": "Base",
+      "center_grid": [
+        5.535268231686015,
+        9.575139978260767,
+        1.2
+      ],
+      "size_grid": [
+        3.2,
+        0.85,
+        1.4
+      ],
+      "rotation_z_degrees": 54,
+      "palette": "rubber"
+    },
+    {
+      "name": "B3 wheel 1 hub",
+      "group": "Base",
+      "center_grid": [
+        5.163120414273539,
+        9.845521194315305,
+        1.2
+      ],
+      "size_grid": [
+        1.05,
+        0.14,
+        1.05
+      ],
+      "rotation_z_degrees": 54,
+      "palette": "edge"
+    },
+    {
+      "name": "B4 spoke step 1",
+      "group": "Base",
+      "center_grid": [
+        -2.527476584857634,
+        3.4787730758122737,
+        4.1
+      ],
+      "size_grid": [
+        5.6,
+        2.2,
+        1.3
+      ],
+      "rotation_z_degrees": 126,
+      "palette": "case_light"
+    },
+    {
+      "name": "B4 spoke step 2",
+      "group": "Base",
+      "center_grid": [
+        -4.790449806183656,
+        6.593488504155822,
+        3.65
+      ],
+      "size_grid": [
+        3.2,
+        1.9,
+        1.3
+      ],
+      "rotation_z_degrees": 126,
+      "palette": "case"
+    },
+    {
+      "name": "B4 spoke step 3",
+      "group": "Base",
+      "center_grid": [
+        -5.936631048153977,
+        8.171071643186968,
+        3.15
+      ],
+      "size_grid": [
+        1.8,
+        1.6,
+        1.3
+      ],
+      "rotation_z_degrees": 126,
+      "palette": "case"
+    },
+    {
+      "name": "B4 spoke teal inset",
+      "group": "Base",
+      "center_grid": [
+        -3.7030470894425798,
+        5.096807064562169,
+        4.79
+      ],
+      "size_grid": [
+        5,
+        0.55,
+        0.12
+      ],
+      "rotation_z_degrees": 126,
+      "palette": "cyan_dark"
+    },
+    {
+      "name": "B4 caster fork",
+      "group": "Base",
+      "center_grid": [
+        -6.465637775217203,
+        8.899186938124423,
+        2.35
+      ],
+      "size_grid": [
+        2,
+        1.9,
+        2
+      ],
+      "rotation_z_degrees": 126,
+      "palette": "case_light"
+    },
+    {
+      "name": "B4 wheel -1 tread",
+      "group": "Base",
+      "center_grid": [
+        -5.535268231686014,
+        9.575139978260767,
+        1.2
+      ],
+      "size_grid": [
+        2.7,
+        0.85,
+        2.4
+      ],
+      "rotation_z_degrees": 126,
+      "palette": "rubber"
+    },
+    {
+      "name": "B4 wheel -1 center",
+      "group": "Base",
+      "center_grid": [
+        -5.535268231686014,
+        9.575139978260767,
+        1.2
+      ],
+      "size_grid": [
+        3.2,
+        0.85,
+        1.4
+      ],
+      "rotation_z_degrees": 126,
+      "palette": "rubber"
+    },
+    {
+      "name": "B4 wheel -1 hub",
+      "group": "Base",
+      "center_grid": [
+        -5.163120414273538,
+        9.845521194315305,
+        1.2
+      ],
+      "size_grid": [
+        1.05,
+        0.14,
+        1.05
+      ],
+      "rotation_z_degrees": 126,
+      "palette": "edge"
+    },
+    {
+      "name": "B4 wheel 1 tread",
+      "group": "Base",
+      "center_grid": [
+        -7.396007318748393,
+        8.223233897988079,
+        1.2
+      ],
+      "size_grid": [
+        2.7,
+        0.85,
+        2.4
+      ],
+      "rotation_z_degrees": 126,
+      "palette": "rubber"
+    },
+    {
+      "name": "B4 wheel 1 center",
+      "group": "Base",
+      "center_grid": [
+        -7.396007318748393,
+        8.223233897988079,
+        1.2
+      ],
+      "size_grid": [
+        3.2,
+        0.85,
+        1.4
+      ],
+      "rotation_z_degrees": 126,
+      "palette": "rubber"
+    },
+    {
+      "name": "B4 wheel 1 hub",
+      "group": "Base",
+      "center_grid": [
+        -7.7681551361608685,
+        7.952852681933542,
+        1.2
+      ],
+      "size_grid": [
+        1.05,
+        0.14,
+        1.05
+      ],
+      "rotation_z_degrees": 126,
+      "palette": "edge"
+    },
+    {
+      "name": "B5 spoke step 1",
+      "group": "Base",
+      "center_grid": [
+        -4.0895430200691605,
+        -1.3287730758122733,
+        4.1
+      ],
+      "size_grid": [
+        5.6,
+        2.2,
+        1.3
+      ],
+      "rotation_z_degrees": 198,
+      "palette": "case_light"
+    },
+    {
+      "name": "B5 spoke step 2",
+      "group": "Base",
+      "center_grid": [
+        -7.7511106078055025,
+        -2.5184885041558203,
+        3.65
+      ],
+      "size_grid": [
+        3.2,
+        1.9,
+        1.3
+      ],
+      "rotation_z_degrees": 198,
+      "palette": "case"
+    },
+    {
+      "name": "B5 spoke step 3",
+      "group": "Base",
+      "center_grid": [
+        -9.605670814581051,
+        -3.1210716431869674,
+        3.15
+      ],
+      "size_grid": [
+        1.8,
+        1.6,
+        1.3
+      ],
+      "rotation_z_degrees": 198,
+      "palette": "case"
+    },
+    {
+      "name": "B5 spoke teal inset",
+      "group": "Base",
+      "center_grid": [
+        -5.991656052659468,
+        -1.9468070645621678,
+        4.79
+      ],
+      "size_grid": [
+        5,
+        0.55,
+        0.12
+      ],
+      "rotation_z_degrees": 198,
+      "palette": "cyan_dark"
+    },
+    {
+      "name": "B5 caster fork",
+      "group": "Base",
+      "center_grid": [
+        -10.46162167924669,
+        -3.39918693812442,
+        2.35
+      ],
+      "size_grid": [
+        2,
+        1.9,
+        2
+      ],
+      "rotation_z_degrees": 198,
+      "palette": "case_light"
+    },
+    {
+      "name": "B5 wheel -1 tread",
+      "group": "Base",
+      "center_grid": [
+        -10.81699122277788,
+        -2.3054719443849936,
+        1.2
+      ],
+      "size_grid": [
+        2.7,
+        0.85,
+        2.4
+      ],
+      "rotation_z_degrees": 198,
+      "palette": "rubber"
+    },
+    {
+      "name": "B5 wheel -1 center",
+      "group": "Base",
+      "center_grid": [
+        -10.81699122277788,
+        -2.3054719443849936,
+        1.2
+      ],
+      "size_grid": [
+        3.2,
+        0.85,
+        1.4
+      ],
+      "rotation_z_degrees": 198,
+      "palette": "rubber"
+    },
+    {
+      "name": "B5 wheel -1 hub",
+      "group": "Base",
+      "center_grid": [
+        -10.959139040190355,
+        -1.8679859468892228,
+        1.2
+      ],
+      "size_grid": [
+        1.05,
+        0.14,
+        1.05
+      ],
+      "rotation_z_degrees": 198,
+      "palette": "edge"
+    },
+    {
+      "name": "B5 wheel 1 tread",
+      "group": "Base",
+      "center_grid": [
+        -10.1062521357155,
+        -4.492901931863846,
+        1.2
+      ],
+      "size_grid": [
+        2.7,
+        0.85,
+        2.4
+      ],
+      "rotation_z_degrees": 198,
+      "palette": "rubber"
+    },
+    {
+      "name": "B5 wheel 1 center",
+      "group": "Base",
+      "center_grid": [
+        -10.1062521357155,
+        -4.492901931863846,
+        1.2
+      ],
+      "size_grid": [
+        3.2,
+        0.85,
+        1.4
+      ],
+      "rotation_z_degrees": 198,
+      "palette": "rubber"
+    },
+    {
+      "name": "B5 wheel 1 hub",
+      "group": "Base",
+      "center_grid": [
+        -9.964104318303026,
+        -4.930387929359617,
+        1.2
+      ],
+      "size_grid": [
+        1.05,
+        0.14,
+        1.05
+      ],
+      "rotation_z_degrees": 198,
+      "palette": "edge"
+    },
+    {
+      "name": "L01 gas lift boot",
+      "group": "Lift",
+      "center_grid": [
+        0,
+        0,
+        7.25
+      ],
+      "size_grid": [
+        3.1,
+        3.1,
+        4.5
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "dark"
+    },
+    {
+      "name": "L02 boot shoulder",
+      "group": "Lift",
+      "center_grid": [
+        0,
+        0,
+        9.25
+      ],
+      "size_grid": [
+        2.75,
+        2.75,
+        0.7
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "case"
+    },
+    {
+      "name": "L03 piston",
+      "group": "Lift",
+      "center_grid": [
+        0,
+        0,
+        10.4
+      ],
+      "size_grid": [
+        1.55,
+        1.55,
+        1.9
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "metal"
+    },
+    {
+      "name": "L04 collar",
+      "group": "Lift",
+      "center_grid": [
+        0,
+        0,
+        11.15
+      ],
+      "size_grid": [
+        2.7,
+        2.7,
+        0.8
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "black"
+    },
+    {
+      "name": "S01 under seat tray",
+      "group": "Seat",
+      "center_grid": [
+        0,
+        0,
+        12.35
+      ],
+      "size_grid": [
+        11.2,
+        9.2,
+        1.7
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "dark"
+    },
+    {
+      "name": "S02 seat chassis",
+      "group": "Seat",
+      "center_grid": [
+        0,
+        -0.15,
+        13.649999999999999
+      ],
+      "size_grid": [
+        18,
+        16,
+        1.5
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "case_light"
+    },
+    {
+      "name": "S03 seat base cushion",
+      "group": "Seat",
+      "center_grid": [
+        0,
+        -0.55,
+        15.05
+      ],
+      "size_grid": [
+        17.2,
+        15.5,
+        1.5
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "case"
+    },
+    {
+      "name": "S04 center seat cushion",
+      "group": "Seat",
+      "center_grid": [
+        0,
+        -1,
+        16.1
+      ],
+      "size_grid": [
+        12.2,
+        13.9,
+        1.2
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "case_light"
+    },
+    {
+      "name": "S05 center seat front",
+      "group": "Seat",
+      "center_grid": [
+        0,
+        -7.7,
+        15.55
+      ],
+      "size_grid": [
+        12.2,
+        1.2,
+        1.4
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "edge"
+    },
+    {
+      "name": "S06 side bolster -1",
+      "group": "Seat",
+      "center_grid": [
+        -7.5,
+        -0.2,
+        16.4
+      ],
+      "size_grid": [
+        2.7,
+        13.3,
+        2.4
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan_dark"
+    },
+    {
+      "name": "S07 bolster top -1",
+      "group": "Seat",
+      "center_grid": [
+        -7.5,
+        -0.45,
+        17.6
+      ],
+      "size_grid": [
+        2.4,
+        12.7,
+        0.35
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan"
+    },
+    {
+      "name": "S08 front bolster step -1",
+      "group": "Seat",
+      "center_grid": [
+        -7,
+        -7,
+        16.15
+      ],
+      "size_grid": [
+        3.2,
+        1.5,
+        1.7
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan_dark"
+    },
+    {
+      "name": "S09 cushion seam -1",
+      "group": "Seat",
+      "center_grid": [
+        -5.65,
+        -1,
+        16.75
+      ],
+      "size_grid": [
+        0.18,
+        12.3,
+        0.12
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "dark"
+    },
+    {
+      "name": "S06 side bolster 1",
+      "group": "Seat",
+      "center_grid": [
+        7.5,
+        -0.2,
+        16.4
+      ],
+      "size_grid": [
+        2.7,
+        13.3,
+        2.4
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan_dark"
+    },
+    {
+      "name": "S07 bolster top 1",
+      "group": "Seat",
+      "center_grid": [
+        7.5,
+        -0.45,
+        17.6
+      ],
+      "size_grid": [
+        2.4,
+        12.7,
+        0.35
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan"
+    },
+    {
+      "name": "S08 front bolster step 1",
+      "group": "Seat",
+      "center_grid": [
+        7,
+        -7,
+        16.15
+      ],
+      "size_grid": [
+        3.2,
+        1.5,
+        1.7
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan_dark"
+    },
+    {
+      "name": "S09 cushion seam 1",
+      "group": "Seat",
+      "center_grid": [
+        5.65,
+        -1,
+        16.75
+      ],
+      "size_grid": [
+        0.18,
+        12.3,
+        0.12
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "dark"
+    },
+    {
+      "name": "S10 cyan front lip",
+      "group": "Seat",
+      "center_grid": [
+        0,
+        -8.23,
+        14.100000000000001
+      ],
+      "size_grid": [
+        15.5,
+        0.22,
+        0.45
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan"
+    },
+    {
+      "name": "S11 front seam pixel 0",
+      "group": "Seat",
+      "center_grid": [
+        -4.8,
+        -8.34,
+        15.45
+      ],
+      "size_grid": [
+        0.55,
+        0.1,
+        0.12
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "metal"
+    },
+    {
+      "name": "S11 front seam pixel 1",
+      "group": "Seat",
+      "center_grid": [
+        -3.1999999999999997,
+        -8.34,
+        15.45
+      ],
+      "size_grid": [
+        0.55,
+        0.1,
+        0.12
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "metal"
+    },
+    {
+      "name": "S11 front seam pixel 2",
+      "group": "Seat",
+      "center_grid": [
+        -1.5999999999999996,
+        -8.34,
+        15.45
+      ],
+      "size_grid": [
+        0.55,
+        0.1,
+        0.12
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "metal"
+    },
+    {
+      "name": "S11 front seam pixel 3",
+      "group": "Seat",
+      "center_grid": [
+        8.881784197001252e-16,
+        -8.34,
+        15.45
+      ],
+      "size_grid": [
+        0.55,
+        0.1,
+        0.12
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "metal"
+    },
+    {
+      "name": "S11 front seam pixel 4",
+      "group": "Seat",
+      "center_grid": [
+        1.6000000000000005,
+        -8.34,
+        15.45
+      ],
+      "size_grid": [
+        0.55,
+        0.1,
+        0.12
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "metal"
+    },
+    {
+      "name": "S11 front seam pixel 5",
+      "group": "Seat",
+      "center_grid": [
+        3.2,
+        -8.34,
+        15.45
+      ],
+      "size_grid": [
+        0.55,
+        0.1,
+        0.12
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "metal"
+    },
+    {
+      "name": "S11 front seam pixel 6",
+      "group": "Seat",
+      "center_grid": [
+        4.800000000000002,
+        -8.34,
+        15.45
+      ],
+      "size_grid": [
+        0.55,
+        0.1,
+        0.12
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "metal"
+    },
+    {
+      "name": "S12 rear hinge axle",
+      "group": "Seat",
+      "center_grid": [
+        0,
+        6.2,
+        14.649999999999999
+      ],
+      "size_grid": [
+        18.5,
+        2.5,
+        2.3
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "dark"
+    },
+    {
+      "name": "S13 hinge cap -1",
+      "group": "Seat",
+      "center_grid": [
+        -9.35,
+        6.2,
+        14.649999999999999
+      ],
+      "size_grid": [
+        0.45,
+        2.9,
+        2.9
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "edge"
+    },
+    {
+      "name": "S14 hinge inner -1",
+      "group": "Seat",
+      "center_grid": [
+        -9.62,
+        6.2,
+        14.649999999999999
+      ],
+      "size_grid": [
+        0.12,
+        1.2,
+        1.2
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan_dark"
+    },
+    {
+      "name": "S13 hinge cap 1",
+      "group": "Seat",
+      "center_grid": [
+        9.35,
+        6.2,
+        14.649999999999999
+      ],
+      "size_grid": [
+        0.45,
+        2.9,
+        2.9
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "edge"
+    },
+    {
+      "name": "S14 hinge inner 1",
+      "group": "Seat",
+      "center_grid": [
+        9.62,
+        6.2,
+        14.649999999999999
+      ],
+      "size_grid": [
+        0.12,
+        1.2,
+        1.2
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan_dark"
+    },
+    {
+      "name": "S15 adjustment lever",
+      "group": "Seat",
+      "center_grid": [
+        7,
+        -1.9,
+        12.3
+      ],
+      "size_grid": [
+        5.4,
+        0.7,
+        0.7
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "metal"
+    },
+    {
+      "name": "S16 adjustment handle",
+      "group": "Seat",
+      "center_grid": [
+        10,
+        -1.9,
+        12.3
+      ],
+      "size_grid": [
+        1.5,
+        2.8,
+        1
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "dark"
+    },
+    {
+      "name": "S17 handle teal label",
+      "group": "Seat",
+      "center_grid": [
+        10,
+        -1.9,
+        12.85
+      ],
+      "size_grid": [
+        0.8,
+        1.7,
+        0.12
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan"
+    },
+    {
+      "name": "S18 tilt knob",
+      "group": "Seat",
+      "center_grid": [
+        -5,
+        -2,
+        11.5
+      ],
+      "size_grid": [
+        2.1,
+        2.1,
+        2.3
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "rubber"
+    },
+    {
+      "name": "R01 structural band 0",
+      "group": "Backrest",
+      "center_grid": [
+        0,
+        7.15,
+        20.5
+      ],
+      "size_grid": [
+        14,
+        3,
+        8
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "case"
+    },
+    {
+      "name": "R02 padded center 0",
+      "group": "Backrest",
+      "center_grid": [
+        0,
+        5.45,
+        20.5
+      ],
+      "size_grid": [
+        10,
+        0.7,
+        7.75
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "case_light"
+    },
+    {
+      "name": "R03 side bolster 0 -1",
+      "group": "Backrest",
+      "center_grid": [
+        -6.8,
+        5.9,
+        20.5
+      ],
+      "size_grid": [
+        2.7,
+        3.1,
+        8
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan_dark"
+    },
+    {
+      "name": "R04 front teal piping 0 -1",
+      "group": "Backrest",
+      "center_grid": [
+        -7.1,
+        4.290000000000001,
+        20.5
+      ],
+      "size_grid": [
+        0.65,
+        0.14,
+        7.65
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan"
+    },
+    {
+      "name": "R05 rear seam 0 -1",
+      "group": "Backrest",
+      "center_grid": [
+        -6.35,
+        8.71,
+        20.5
+      ],
+      "size_grid": [
+        0.3,
+        0.12,
+        7.45
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "edge"
+    },
+    {
+      "name": "R03 side bolster 0 1",
+      "group": "Backrest",
+      "center_grid": [
+        6.8,
+        5.9,
+        20.5
+      ],
+      "size_grid": [
+        2.7,
+        3.1,
+        8
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan_dark"
+    },
+    {
+      "name": "R04 front teal piping 0 1",
+      "group": "Backrest",
+      "center_grid": [
+        7.1,
+        4.290000000000001,
+        20.5
+      ],
+      "size_grid": [
+        0.65,
+        0.14,
+        7.65
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan"
+    },
+    {
+      "name": "R05 rear seam 0 1",
+      "group": "Backrest",
+      "center_grid": [
+        6.35,
+        8.71,
+        20.5
+      ],
+      "size_grid": [
+        0.3,
+        0.12,
+        7.45
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "edge"
+    },
+    {
+      "name": "R01 structural band 1",
+      "group": "Backrest",
+      "center_grid": [
+        0,
+        7.85,
+        28.0
+      ],
+      "size_grid": [
+        16,
+        3,
+        7
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "case"
+    },
+    {
+      "name": "R02 padded center 1",
+      "group": "Backrest",
+      "center_grid": [
+        0,
+        6.1499999999999995,
+        28.0
+      ],
+      "size_grid": [
+        12,
+        0.7,
+        6.75
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "case_light"
+    },
+    {
+      "name": "R03 side bolster 1 -1",
+      "group": "Backrest",
+      "center_grid": [
+        -7.8,
+        6.6,
+        28.0
+      ],
+      "size_grid": [
+        2.7,
+        3.1,
+        7
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan_dark"
+    },
+    {
+      "name": "R04 front teal piping 1 -1",
+      "group": "Backrest",
+      "center_grid": [
+        -8.1,
+        4.99,
+        28.0
+      ],
+      "size_grid": [
+        0.65,
+        0.14,
+        6.65
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan"
+    },
+    {
+      "name": "R05 rear seam 1 -1",
+      "group": "Backrest",
+      "center_grid": [
+        -7.35,
+        9.41,
+        28.0
+      ],
+      "size_grid": [
+        0.3,
+        0.12,
+        6.45
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "edge"
+    },
+    {
+      "name": "R03 side bolster 1 1",
+      "group": "Backrest",
+      "center_grid": [
+        7.8,
+        6.6,
+        28.0
+      ],
+      "size_grid": [
+        2.7,
+        3.1,
+        7
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan_dark"
+    },
+    {
+      "name": "R04 front teal piping 1 1",
+      "group": "Backrest",
+      "center_grid": [
+        8.1,
+        4.99,
+        28.0
+      ],
+      "size_grid": [
+        0.65,
+        0.14,
+        6.65
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan"
+    },
+    {
+      "name": "R05 rear seam 1 1",
+      "group": "Backrest",
+      "center_grid": [
+        7.35,
+        9.41,
+        28.0
+      ],
+      "size_grid": [
+        0.3,
+        0.12,
+        6.45
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "edge"
+    },
+    {
+      "name": "R01 structural band 2",
+      "group": "Backrest",
+      "center_grid": [
+        0,
+        8.55,
+        34.5
+      ],
+      "size_grid": [
+        18,
+        3,
+        6
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "case"
+    },
+    {
+      "name": "R02 padded center 2",
+      "group": "Backrest",
+      "center_grid": [
+        0,
+        6.8500000000000005,
+        34.5
+      ],
+      "size_grid": [
+        14,
+        0.7,
+        5.75
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "case_light"
+    },
+    {
+      "name": "R03 side bolster 2 -1",
+      "group": "Backrest",
+      "center_grid": [
+        -8.8,
+        7.300000000000001,
+        34.5
+      ],
+      "size_grid": [
+        2.7,
+        3.1,
+        6
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan_dark"
+    },
+    {
+      "name": "R04 front teal piping 2 -1",
+      "group": "Backrest",
+      "center_grid": [
+        -9.1,
+        5.690000000000001,
+        34.5
+      ],
+      "size_grid": [
+        0.65,
+        0.14,
+        5.65
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan"
+    },
+    {
+      "name": "R05 rear seam 2 -1",
+      "group": "Backrest",
+      "center_grid": [
+        -8.35,
+        10.110000000000001,
+        34.5
+      ],
+      "size_grid": [
+        0.3,
+        0.12,
+        5.45
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "edge"
+    },
+    {
+      "name": "R03 side bolster 2 1",
+      "group": "Backrest",
+      "center_grid": [
+        8.8,
+        7.300000000000001,
+        34.5
+      ],
+      "size_grid": [
+        2.7,
+        3.1,
+        6
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan_dark"
+    },
+    {
+      "name": "R04 front teal piping 2 1",
+      "group": "Backrest",
+      "center_grid": [
+        9.1,
+        5.690000000000001,
+        34.5
+      ],
+      "size_grid": [
+        0.65,
+        0.14,
+        5.65
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan"
+    },
+    {
+      "name": "R05 rear seam 2 1",
+      "group": "Backrest",
+      "center_grid": [
+        8.35,
+        10.110000000000001,
+        34.5
+      ],
+      "size_grid": [
+        0.3,
+        0.12,
+        5.45
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "edge"
+    },
+    {
+      "name": "R06 shoulder wing -1",
+      "group": "Backrest",
+      "center_grid": [
+        -9.25,
+        8.2,
+        35.75
+      ],
+      "size_grid": [
+        3.5,
+        3.8,
+        3.5
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan_dark"
+    },
+    {
+      "name": "R07 shoulder highlight -1",
+      "group": "Backrest",
+      "center_grid": [
+        -10.9,
+        6.25,
+        35.75
+      ],
+      "size_grid": [
+        0.25,
+        0.14,
+        2.9
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan"
+    },
+    {
+      "name": "R08 crown side -1",
+      "group": "Backrest",
+      "center_grid": [
+        -7.5,
+        9.15,
+        39.5
+      ],
+      "size_grid": [
+        3,
+        3,
+        4
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "case"
+    },
+    {
+      "name": "R09 crown side cyan -1",
+      "group": "Backrest",
+      "center_grid": [
+        -8.92,
+        7.6,
+        39.5
+      ],
+      "size_grid": [
+        0.25,
+        0.14,
+        3.6
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan"
+    },
+    {
+      "name": "R06 shoulder wing 1",
+      "group": "Backrest",
+      "center_grid": [
+        9.25,
+        8.2,
+        35.75
+      ],
+      "size_grid": [
+        3.5,
+        3.8,
+        3.5
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan_dark"
+    },
+    {
+      "name": "R07 shoulder highlight 1",
+      "group": "Backrest",
+      "center_grid": [
+        10.9,
+        6.25,
+        35.75
+      ],
+      "size_grid": [
+        0.25,
+        0.14,
+        2.9
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan"
+    },
+    {
+      "name": "R08 crown side 1",
+      "group": "Backrest",
+      "center_grid": [
+        7.5,
+        9.15,
+        39.5
+      ],
+      "size_grid": [
+        3,
+        3,
+        4
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "case"
+    },
+    {
+      "name": "R09 crown side cyan 1",
+      "group": "Backrest",
+      "center_grid": [
+        8.92,
+        7.6,
+        39.5
+      ],
+      "size_grid": [
+        0.25,
+        0.14,
+        3.6
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan"
+    },
+    {
+      "name": "R10 headrest central bridge",
+      "group": "Backrest",
+      "center_grid": [
+        0,
+        9.15,
+        39.5
+      ],
+      "size_grid": [
+        2.6,
+        3,
+        4
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "case_light"
+    },
+    {
+      "name": "R11 upper headrest crown",
+      "group": "Backrest",
+      "center_grid": [
+        0,
+        9.6,
+        43.0
+      ],
+      "size_grid": [
+        15,
+        3,
+        3
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "case"
+    },
+    {
+      "name": "R12 crown top",
+      "group": "Backrest",
+      "center_grid": [
+        0,
+        9.6,
+        44.6
+      ],
+      "size_grid": [
+        13,
+        2.8,
+        0.2
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "edge"
+    },
+    {
+      "name": "R13 crown cushion",
+      "group": "Backrest",
+      "center_grid": [
+        0,
+        7.85,
+        42.9
+      ],
+      "size_grid": [
+        12,
+        0.55,
+        2.2
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "case_light"
+    },
+    {
+      "name": "R14 slot lower lip -1",
+      "group": "Backrest",
+      "center_grid": [
+        -3.65,
+        7.58,
+        37.85
+      ],
+      "size_grid": [
+        4.7,
+        0.16,
+        0.65
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan"
+    },
+    {
+      "name": "R15 slot upper lip -1",
+      "group": "Backrest",
+      "center_grid": [
+        -3.65,
+        7.58,
+        41.15
+      ],
+      "size_grid": [
+        4.7,
+        0.16,
+        0.65
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan"
+    },
+    {
+      "name": "R16 slot outer lip -1",
+      "group": "Backrest",
+      "center_grid": [
+        -5.8,
+        7.58,
+        39.5
+      ],
+      "size_grid": [
+        0.4,
+        0.16,
+        2.65
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan_dark"
+    },
+    {
+      "name": "R17 slot inner lip -1",
+      "group": "Backrest",
+      "center_grid": [
+        -1.5,
+        7.58,
+        39.5
+      ],
+      "size_grid": [
+        0.4,
+        0.16,
+        2.65
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan_dark"
+    },
+    {
+      "name": "R14 slot lower lip 1",
+      "group": "Backrest",
+      "center_grid": [
+        3.65,
+        7.58,
+        37.85
+      ],
+      "size_grid": [
+        4.7,
+        0.16,
+        0.65
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan"
+    },
+    {
+      "name": "R15 slot upper lip 1",
+      "group": "Backrest",
+      "center_grid": [
+        3.65,
+        7.58,
+        41.15
+      ],
+      "size_grid": [
+        4.7,
+        0.16,
+        0.65
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan"
+    },
+    {
+      "name": "R16 slot outer lip 1",
+      "group": "Backrest",
+      "center_grid": [
+        5.8,
+        7.58,
+        39.5
+      ],
+      "size_grid": [
+        0.4,
+        0.16,
+        2.65
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan_dark"
+    },
+    {
+      "name": "R17 slot inner lip 1",
+      "group": "Backrest",
+      "center_grid": [
+        1.5,
+        7.58,
+        39.5
+      ],
+      "size_grid": [
+        0.4,
+        0.16,
+        2.65
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan_dark"
+    },
+    {
+      "name": "R18 neck pillow",
+      "group": "Backrest",
+      "center_grid": [
+        0,
+        5.8,
+        35.2
+      ],
+      "size_grid": [
+        10.8,
+        2.2,
+        3.15
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "dark"
+    },
+    {
+      "name": "R19 neck pillow face",
+      "group": "Backrest",
+      "center_grid": [
+        0,
+        4.65,
+        35.2
+      ],
+      "size_grid": [
+        9.5,
+        0.2,
+        2.5
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "case"
+    },
+    {
+      "name": "R20 neck accent -1",
+      "group": "Backrest",
+      "center_grid": [
+        -4.7,
+        4.5,
+        35.2
+      ],
+      "size_grid": [
+        0.45,
+        0.15,
+        2.1
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan"
+    },
+    {
+      "name": "R20 neck accent 1",
+      "group": "Backrest",
+      "center_grid": [
+        4.7,
+        4.5,
+        35.2
+      ],
+      "size_grid": [
+        0.45,
+        0.15,
+        2.1
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan"
+    },
+    {
+      "name": "R21 lumbar pillow",
+      "group": "Backrest",
+      "center_grid": [
+        0,
+        3.95,
+        22.1
+      ],
+      "size_grid": [
+        12.5,
+        3,
+        4.4
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "dark"
+    },
+    {
+      "name": "R22 lumbar padded face",
+      "group": "Backrest",
+      "center_grid": [
+        0,
+        2.35,
+        22.1
+      ],
+      "size_grid": [
+        11.5,
+        0.4,
+        3.6
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "case_light"
+    },
+    {
+      "name": "R23 lumbar cyan trim -1",
+      "group": "Backrest",
+      "center_grid": [
+        -5.7,
+        2.08,
+        22.1
+      ],
+      "size_grid": [
+        0.5,
+        0.15,
+        3.35
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan"
+    },
+    {
+      "name": "R23 lumbar cyan trim 1",
+      "group": "Backrest",
+      "center_grid": [
+        5.7,
+        2.08,
+        22.1
+      ],
+      "size_grid": [
+        0.5,
+        0.15,
+        3.35
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan"
+    },
+    {
+      "name": "R24 pixel badge 0",
+      "group": "Backrest",
+      "center_grid": [
+        -0.9,
+        7.5,
+        43.2
+      ],
+      "size_grid": [
+        0.75,
+        0.15,
+        0.45
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan"
+    },
+    {
+      "name": "R24 pixel badge 1",
+      "group": "Backrest",
+      "center_grid": [
+        0,
+        7.5,
+        42.65
+      ],
+      "size_grid": [
+        0.75,
+        0.15,
+        0.45
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan"
+    },
+    {
+      "name": "R24 pixel badge 2",
+      "group": "Backrest",
+      "center_grid": [
+        0.9,
+        7.5,
+        43.2
+      ],
+      "size_grid": [
+        0.75,
+        0.15,
+        0.45
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan"
+    },
+    {
+      "name": "R25 rear inset panel",
+      "group": "Backrest",
+      "center_grid": [
+        0,
+        10.11,
+        32.5
+      ],
+      "size_grid": [
+        12,
+        0.16,
+        8.6
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "dark"
+    },
+    {
+      "name": "R26 rear reinforcement -4.25",
+      "group": "Backrest",
+      "center_grid": [
+        -4.25,
+        10.25,
+        32.3
+      ],
+      "size_grid": [
+        0.65,
+        0.18,
+        7.5
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "case_light"
+    },
+    {
+      "name": "R26 rear reinforcement 4.25",
+      "group": "Backrest",
+      "center_grid": [
+        4.25,
+        10.25,
+        32.3
+      ],
+      "size_grid": [
+        0.65,
+        0.18,
+        7.5
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "case_light"
+    },
+    {
+      "name": "R27 rear badge",
+      "group": "Backrest",
+      "center_grid": [
+        0,
+        10.3,
+        35.1
+      ],
+      "size_grid": [
+        3,
+        0.12,
+        0.6
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan_dark"
+    },
+    {
+      "name": "R28 rear pixel seam 32.8",
+      "group": "Backrest",
+      "center_grid": [
+        0,
+        10.29,
+        30.299999999999997
+      ],
+      "size_grid": [
+        4,
+        0.12,
+        0.25
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "edge"
+    },
+    {
+      "name": "R28 rear pixel seam 34.15",
+      "group": "Backrest",
+      "center_grid": [
+        0,
+        10.29,
+        31.65
+      ],
+      "size_grid": [
+        4,
+        0.12,
+        0.25
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "edge"
+    },
+    {
+      "name": "R28 rear pixel seam 35.5",
+      "group": "Backrest",
+      "center_grid": [
+        0,
+        10.29,
+        33.0
+      ],
+      "size_grid": [
+        4,
+        0.12,
+        0.25
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "edge"
+    },
+    {
+      "name": "Arm_L 01 mount",
+      "group": "Arm_L",
+      "center_grid": [
+        -8.3,
+        1,
+        13.899999999999999
+      ],
+      "size_grid": [
+        2.7,
+        4.8,
+        1.3
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "dark"
+    },
+    {
+      "name": "Arm_L 02 upright",
+      "group": "Arm_L",
+      "center_grid": [
+        -10.25,
+        0.8,
+        17.7
+      ],
+      "size_grid": [
+        1.3,
+        2,
+        7.1
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "case"
+    },
+    {
+      "name": "Arm_L 03 telescopic insert",
+      "group": "Arm_L",
+      "center_grid": [
+        -10.25,
+        0.8,
+        21.05
+      ],
+      "size_grid": [
+        0.85,
+        1.5,
+        2.4
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "metal"
+    },
+    {
+      "name": "Arm_L 04 pad chassis",
+      "group": "Arm_L",
+      "center_grid": [
+        -10.25,
+        -0.45,
+        22.55
+      ],
+      "size_grid": [
+        3.6,
+        9.6,
+        0.85
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "case_light"
+    },
+    {
+      "name": "Arm_L 05 padded top",
+      "group": "Arm_L",
+      "center_grid": [
+        -10.25,
+        -0.45,
+        23.25
+      ],
+      "size_grid": [
+        3.9,
+        9.8,
+        0.65
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "dark"
+    },
+    {
+      "name": "Arm_L 06 teal outer stripe",
+      "group": "Arm_L",
+      "center_grid": [
+        -12.25,
+        -0.45,
+        22.7
+      ],
+      "size_grid": [
+        0.12,
+        8.5,
+        0.4
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan"
+    },
+    {
+      "name": "Arm_L 07 front cap",
+      "group": "Arm_L",
+      "center_grid": [
+        -10.25,
+        -5.3,
+        23.0
+      ],
+      "size_grid": [
+        3.4,
+        0.28,
+        0.7
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "case"
+    },
+    {
+      "name": "Arm_L 08 height button",
+      "group": "Arm_L",
+      "center_grid": [
+        -11.01,
+        -0.1,
+        20.2
+      ],
+      "size_grid": [
+        0.2,
+        1.1,
+        0.7
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan_dark"
+    },
+    {
+      "name": "Arm_R 01 mount",
+      "group": "Arm_R",
+      "center_grid": [
+        8.3,
+        1,
+        13.899999999999999
+      ],
+      "size_grid": [
+        2.7,
+        4.8,
+        1.3
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "dark"
+    },
+    {
+      "name": "Arm_R 02 upright",
+      "group": "Arm_R",
+      "center_grid": [
+        10.25,
+        0.8,
+        17.7
+      ],
+      "size_grid": [
+        1.3,
+        2,
+        7.1
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "case"
+    },
+    {
+      "name": "Arm_R 03 telescopic insert",
+      "group": "Arm_R",
+      "center_grid": [
+        10.25,
+        0.8,
+        21.05
+      ],
+      "size_grid": [
+        0.85,
+        1.5,
+        2.4
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "metal"
+    },
+    {
+      "name": "Arm_R 04 pad chassis",
+      "group": "Arm_R",
+      "center_grid": [
+        10.25,
+        -0.45,
+        22.55
+      ],
+      "size_grid": [
+        3.6,
+        9.6,
+        0.85
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "case_light"
+    },
+    {
+      "name": "Arm_R 05 padded top",
+      "group": "Arm_R",
+      "center_grid": [
+        10.25,
+        -0.45,
+        23.25
+      ],
+      "size_grid": [
+        3.9,
+        9.8,
+        0.65
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "dark"
+    },
+    {
+      "name": "Arm_R 06 teal outer stripe",
+      "group": "Arm_R",
+      "center_grid": [
+        12.25,
+        -0.45,
+        22.7
+      ],
+      "size_grid": [
+        0.12,
+        8.5,
+        0.4
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan"
+    },
+    {
+      "name": "Arm_R 07 front cap",
+      "group": "Arm_R",
+      "center_grid": [
+        10.25,
+        -5.3,
+        23.0
+      ],
+      "size_grid": [
+        3.4,
+        0.28,
+        0.7
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "case"
+    },
+    {
+      "name": "Arm_R 08 height button",
+      "group": "Arm_R",
+      "center_grid": [
+        11.01,
+        -0.1,
+        20.2
+      ],
+      "size_grid": [
+        0.2,
+        1.1,
+        0.7
+      ],
+      "rotation_z_degrees": 0,
+      "palette": "cyan_dark"
+    }
+  ]
+}

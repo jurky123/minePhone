@@ -1,0 +1,12 @@
+{
+  "loader": "forge:obj",
+  "model": "browserlink:models/block/computer_chair.obj",
+  "automatic_culling": false,
+  "shade_quads": true,
+  "flip_v": false,
+  "emissive_ambient": false,
+  "ambientocclusion": false,
+  "textures": {
+    "particle": "browserlink:block/chair_atlas"
+  }
+}

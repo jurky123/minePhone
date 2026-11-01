@@ -1,0 +1,8 @@
+<!doctype html><meta charset="utf-8"><title>BrowserLink motion benchmark</title>
+<style>body{margin:0;background:#142536;color:#d9fff0;font:24px sans-serif}h1,p{margin:24px}canvas{width:100%;height:50vh}</style>
+<h1>BrowserLink · Motion benchmark</h1><p>Local animation for capture / decode / upload measurements. No audio or network requests.</p>
+<canvas width="1280" height="400"></canvas>
+<script>
+const c=document.querySelector('canvas'),g=c.getContext('2d');
+function draw(t){g.fillStyle='#142536';g.fillRect(0,0,c.width,c.height);for(let i=0;i<20;i++){g.fillStyle=`hsl(${i*18},65%,65%)`;g.fillRect((t/7+i*83)%1400-120,30+(i%5)*65,110,45);}g.fillStyle='white';g.font='24px monospace';g.fillText('Time: '+(t/1000).toFixed(2)+' s',30,390);requestAnimationFrame(draw);}requestAnimationFrame(draw);
+</script>

@@ -1,0 +1,28 @@
+<!doctype html><meta charset="utf-8"><title>BrowserLink video QA</title>
+<style>body{margin:0;background:#142536;color:#d9fff0;font:20px system-ui}header{padding:12px}button{font:inherit;padding:6px}video,canvas{width:100%;max-height:78vh;object-fit:contain}pre{margin:8px}</style>
+<header><button id="make">生成 10 秒本地测试视频</button> <button id="play">播放 / 暂停</button> <input id="input" placeholder="副手点击输入测试"><button id="keepalive">测试可见小窗</button><span id="status">尚未生成</span></header>
+<canvas width="1280" height="720"></canvas><video controls loop playsinline hidden></video><pre id="stats"></pre>
+<script>
+const c=document.querySelector('canvas'),g=c.getContext('2d'),v=document.querySelector('video'),s=document.querySelector('#status');let recording=false,started=0;
+const hit=document.createElement('div');hit.style='position:fixed;bottom:0;left:0;background:#123;color:white;font:18px monospace;pointer-events:none';document.body.append(hit);
+document.addEventListener('pointerdown',e=>{hit.textContent=`HIT ${e.target.id||e.target.tagName} x=${e.clientX} y=${e.clientY} viewport=${innerWidth}x${innerHeight} DPR=${devicePixelRatio}`;},true);
+function draw(t){if(!recording)return;const n=(t-started)/1000;
+g.fillStyle='#152536';g.fillRect(0,0,1280,720);
+for(let y=0;y<18;y++)for(let x=0;x<32;x++){g.fillStyle=`hsl(${(x*9+y*17+n*40)%360} 65% ${30+25*Math.sin(x*.3+y*.2+n)}%)`;g.fillRect(x*40,y*40,40,40);}
+g.fillStyle='#001b';g.fillRect(0,0,1280,100);g.fillStyle='white';g.font='bold 48px monospace';g.fillText('SOURCE '+n.toFixed(3)+' s',25,65);
+for(let i=0;i<20;i++){g.fillStyle='white';g.beginPath();g.arc((n*150+i*89)%1400-60,160+(i%6)*85,18,0,7);g.fill();}
+requestAnimationFrame(draw);}
+document.querySelector('#make').onclick=async()=>{if(recording)return;recording=true;v.pause();v.hidden=true;c.hidden=false;s.textContent='生成中，请保持此窗口前台 10 秒';started=performance.now();requestAnimationFrame(draw);const stream=c.captureStream(30),chunks=[];const r=new MediaRecorder(stream,{mimeType:'video/webm;codecs=vp8',videoBitsPerSecond:6000000});r.ondataavailable=e=>{if(e.data.size)chunks.push(e.data)};r.onstop=()=>{recording=false;stream.getTracks().forEach(t=>t.stop());v.src=URL.createObjectURL(new Blob(chunks,{type:'video/webm'}));c.hidden=true;v.hidden=false;s.textContent='本地 WebM / VP8 / 1280×720 / 30 FPS 循环播放';v.play();};r.start();setTimeout(()=>r.stop(),10000);};
+document.querySelector('#play').onclick=()=>v.paused?v.play():v.pause();
+document.querySelector('#keepalive').onclick=async()=>{
+ try{
+  if(!window.documentPictureInPicture)throw Error('当前浏览器不支持文档画中画');
+  if(documentPictureInPicture.window){documentPictureInPicture.window.close();return;}
+  const pip=await documentPictureInPicture.requestWindow({width:180,height:80,disallowReturnToOpener:true});
+  pip.document.title='BrowserLink 可见性对照';
+  pip.document.body.style.cssText='margin:8px;background:#142536;color:#d9fff0;font:13px system-ui';
+  pip.document.body.textContent='BrowserLink 可见性测试。保持此小窗，切回游戏观察帧率；关闭后再对照。';
+ }catch(e){s.textContent=e.message;}
+};
+setInterval(()=>{const q=v.getVideoPlaybackQuality();document.querySelector('#stats').textContent=`Decoded ${q.totalVideoFrames} | dropped ${q.droppedVideoFrames} | video time ${v.currentTime.toFixed(3)} | ${v.paused?'paused':'playing'}`;},1000);
+</script>

@@ -1,0 +1,20 @@
+{
+  "block.browserlink.computer": "BrowserLink Computer",
+  "item.browserlink.phone": "BrowserLink Phone",
+  "key.browserlink.open": "Open BrowserLink",
+  "key.categories.browserlink": "BrowserLink",
+  "screen.browserlink.title": "BrowserLink / Local browser",
+  "screen.browserlink.disconnect": "Disconnect",
+  "screen.browserlink.text": "Type or paste text, then Send",
+  "screen.browserlink.send": "Send",
+  "screen.browserlink.waiting": "Connect a tab using the BrowserLink extension",
+  "screen.browserlink.help": "Click page to control / Ctrl+V to paste / Esc to return",
+  "block.browserlink.computer_chair": "BrowserLink Computer Chair",
+  "screen.browserlink.connect_help": "Connect Chrome",
+  "screen.browserlink.address": "URL / Enter to go / + new tab",
+  "screen.browserlink.rotate": "Rotate",
+  "block.browserlink.television": "Browser Television",
+  "key.browserlink.rotate": "Rotate held phone",
+  "key.browserlink.metrics": "Toggle browser performance panel",
+  "key.browserlink.fullscreen": "Toggle browser-compatible borderless fullscreen"
+}

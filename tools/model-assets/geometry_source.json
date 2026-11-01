@@ -1,0 +1,2059 @@
+[
+  {
+    "name": "M01 base rubber",
+    "group": "monitor",
+    "center_voxels": [
+      0,
+      0.6,
+      0.25
+    ],
+    "size_voxels": [
+      11.5,
+      6.5,
+      0.5
+    ],
+    "palette": "rubber",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "M02 base foot",
+    "group": "monitor",
+    "center_voxels": [
+      0,
+      0.6,
+      0.9
+    ],
+    "size_voxels": [
+      12,
+      7,
+      1
+    ],
+    "palette": "case_light",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "M03 base top step",
+    "group": "monitor",
+    "center_voxels": [
+      0,
+      1.2,
+      1.5
+    ],
+    "size_voxels": [
+      8,
+      5,
+      0.3
+    ],
+    "palette": "case",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "M04 column",
+    "group": "monitor",
+    "center_voxels": [
+      0,
+      1,
+      3.8
+    ],
+    "size_voxels": [
+      3,
+      2.5,
+      5.2
+    ],
+    "palette": "case_light",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "M05 column face",
+    "group": "monitor",
+    "center_voxels": [
+      0,
+      -0.28,
+      3.8
+    ],
+    "size_voxels": [
+      1.4,
+      0.12,
+      3.3
+    ],
+    "palette": "dark",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "M06 rear hinge",
+    "group": "monitor",
+    "center_voxels": [
+      0,
+      1.6,
+      8
+    ],
+    "size_voxels": [
+      6,
+      2.4,
+      3
+    ],
+    "palette": "dark",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "M07 rear shell",
+    "group": "monitor",
+    "center_voxels": [
+      0,
+      1,
+      14
+    ],
+    "size_voxels": [
+      22,
+      3,
+      15
+    ],
+    "palette": "case",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "M08 chassis rim",
+    "group": "monitor",
+    "center_voxels": [
+      0,
+      -0.3,
+      14
+    ],
+    "size_voxels": [
+      24,
+      2.4,
+      16
+    ],
+    "palette": "case_light",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "M09 front bezel",
+    "group": "monitor",
+    "center_voxels": [
+      0,
+      -1.6,
+      14
+    ],
+    "size_voxels": [
+      23,
+      0.8,
+      15
+    ],
+    "palette": "dark",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "M10 screen inset",
+    "group": "monitor",
+    "center_voxels": [
+      0,
+      -2.04,
+      14.7
+    ],
+    "size_voxels": [
+      20.5,
+      0.15,
+      12.3
+    ],
+    "palette": "black",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "M11 pixel landscape screen",
+    "group": "monitor",
+    "center_voxels": [
+      0,
+      -2.14,
+      14.7
+    ],
+    "size_voxels": [
+      20,
+      0.08,
+      12
+    ],
+    "palette": "screen_dark",
+    "emissive": true,
+    "screen": true
+  },
+  {
+    "name": "M12 upper bezel highlight",
+    "group": "monitor",
+    "center_voxels": [
+      0,
+      -2.03,
+      21.15
+    ],
+    "size_voxels": [
+      21.5,
+      0.1,
+      0.32
+    ],
+    "palette": "edge",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "M13 bottom chin",
+    "group": "monitor",
+    "center_voxels": [
+      0,
+      -2.04,
+      7.7
+    ],
+    "size_voxels": [
+      21.5,
+      0.1,
+      1.2
+    ],
+    "palette": "case",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "M14 square status LED",
+    "group": "monitor",
+    "center_voxels": [
+      9.6,
+      -2.14,
+      7.75
+    ],
+    "size_voxels": [
+      0.5,
+      0.13,
+      0.5
+    ],
+    "palette": "cyan",
+    "emissive": true,
+    "screen": false
+  },
+  {
+    "name": "M15 control square 1",
+    "group": "monitor",
+    "center_voxels": [
+      6.5,
+      -2.12,
+      7.7
+    ],
+    "size_voxels": [
+      0.3,
+      0.08,
+      0.3
+    ],
+    "palette": "edge",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "M15 control square 2",
+    "group": "monitor",
+    "center_voxels": [
+      7.25,
+      -2.12,
+      7.7
+    ],
+    "size_voxels": [
+      0.3,
+      0.08,
+      0.3
+    ],
+    "palette": "edge",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "M15 control square 3",
+    "group": "monitor",
+    "center_voxels": [
+      8.0,
+      -2.12,
+      7.7
+    ],
+    "size_voxels": [
+      0.3,
+      0.08,
+      0.3
+    ],
+    "palette": "edge",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "M16 center badge",
+    "group": "monitor",
+    "center_voxels": [
+      0,
+      -2.13,
+      7.7
+    ],
+    "size_voxels": [
+      1.4,
+      0.08,
+      0.32
+    ],
+    "palette": "metal",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "M17 rear vent 1",
+    "group": "monitor",
+    "center_voxels": [
+      -6,
+      2.53,
+      17.5
+    ],
+    "size_voxels": [
+      1,
+      0.12,
+      2
+    ],
+    "palette": "black",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "M17 rear vent 2",
+    "group": "monitor",
+    "center_voxels": [
+      -4,
+      2.53,
+      17.5
+    ],
+    "size_voxels": [
+      1,
+      0.12,
+      2
+    ],
+    "palette": "black",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "M17 rear vent 3",
+    "group": "monitor",
+    "center_voxels": [
+      -2,
+      2.53,
+      17.5
+    ],
+    "size_voxels": [
+      1,
+      0.12,
+      2
+    ],
+    "palette": "black",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "M17 rear vent 4",
+    "group": "monitor",
+    "center_voxels": [
+      0,
+      2.53,
+      17.5
+    ],
+    "size_voxels": [
+      1,
+      0.12,
+      2
+    ],
+    "palette": "black",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "M17 rear vent 5",
+    "group": "monitor",
+    "center_voxels": [
+      2,
+      2.53,
+      17.5
+    ],
+    "size_voxels": [
+      1,
+      0.12,
+      2
+    ],
+    "palette": "black",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "M17 rear vent 6",
+    "group": "monitor",
+    "center_voxels": [
+      4,
+      2.53,
+      17.5
+    ],
+    "size_voxels": [
+      1,
+      0.12,
+      2
+    ],
+    "palette": "black",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "M17 rear vent 7",
+    "group": "monitor",
+    "center_voxels": [
+      6,
+      2.53,
+      17.5
+    ],
+    "size_voxels": [
+      1,
+      0.12,
+      2
+    ],
+    "palette": "black",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "M18 rear service plate",
+    "group": "monitor",
+    "center_voxels": [
+      0,
+      2.6,
+      12
+    ],
+    "size_voxels": [
+      7,
+      0.18,
+      4
+    ],
+    "palette": "dark",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "M19 video port",
+    "group": "monitor",
+    "center_voxels": [
+      -1.4,
+      2.76,
+      11.5
+    ],
+    "size_voxels": [
+      2,
+      0.15,
+      0.65
+    ],
+    "palette": "metal",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "M20 port cavity",
+    "group": "monitor",
+    "center_voxels": [
+      -1.4,
+      2.86,
+      11.5
+    ],
+    "size_voxels": [
+      1.5,
+      0.08,
+      0.35
+    ],
+    "palette": "black",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "M21 DC port",
+    "group": "monitor",
+    "center_voxels": [
+      1.8,
+      2.77,
+      11.5
+    ],
+    "size_voxels": [
+      0.7,
+      0.15,
+      0.7
+    ],
+    "palette": "black",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T01 foot -4 -5.3",
+    "group": "tower",
+    "center_voxels": [
+      -4,
+      -5.3,
+      0.5
+    ],
+    "size_voxels": [
+      2,
+      2,
+      1
+    ],
+    "palette": "rubber",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T01 foot -4 6.3",
+    "group": "tower",
+    "center_voxels": [
+      -4,
+      6.3,
+      0.5
+    ],
+    "size_voxels": [
+      2,
+      2,
+      1
+    ],
+    "palette": "rubber",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T01 foot 4 -5.3",
+    "group": "tower",
+    "center_voxels": [
+      4,
+      -5.3,
+      0.5
+    ],
+    "size_voxels": [
+      2,
+      2,
+      1
+    ],
+    "palette": "rubber",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T01 foot 4 6.3",
+    "group": "tower",
+    "center_voxels": [
+      4,
+      6.3,
+      0.5
+    ],
+    "size_voxels": [
+      2,
+      2,
+      1
+    ],
+    "palette": "rubber",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T02 main case",
+    "group": "tower",
+    "center_voxels": [
+      0,
+      0.5,
+      11.5
+    ],
+    "size_voxels": [
+      11,
+      15,
+      21
+    ],
+    "palette": "case",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T03 top cap",
+    "group": "tower",
+    "center_voxels": [
+      0,
+      0.5,
+      22.2
+    ],
+    "size_voxels": [
+      11,
+      15,
+      0.4
+    ],
+    "palette": "case_light",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T04 bottom sill",
+    "group": "tower",
+    "center_voxels": [
+      0,
+      -0.1,
+      1.3
+    ],
+    "size_voxels": [
+      11,
+      14.3,
+      0.6
+    ],
+    "palette": "case_light",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T05 front surround",
+    "group": "tower",
+    "center_voxels": [
+      0,
+      -7.12,
+      11.5
+    ],
+    "size_voxels": [
+      10.3,
+      0.24,
+      20
+    ],
+    "palette": "case_light",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T06 front inset",
+    "group": "tower",
+    "center_voxels": [
+      0,
+      -7.29,
+      11.5
+    ],
+    "size_voxels": [
+      8.5,
+      0.12,
+      18.6
+    ],
+    "palette": "dark",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T07 front upper plate",
+    "group": "tower",
+    "center_voxels": [
+      0,
+      -7.4,
+      18.6
+    ],
+    "size_voxels": [
+      8.5,
+      0.12,
+      4.2
+    ],
+    "palette": "case",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T08 power socket",
+    "group": "tower",
+    "center_voxels": [
+      2.65,
+      -7.52,
+      18.9
+    ],
+    "size_voxels": [
+      1.7,
+      0.16,
+      1.7
+    ],
+    "palette": "black",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T09 power key",
+    "group": "tower",
+    "center_voxels": [
+      2.65,
+      -7.65,
+      18.9
+    ],
+    "size_voxels": [
+      1.1,
+      0.13,
+      1.1
+    ],
+    "palette": "cyan",
+    "emissive": true,
+    "screen": false
+  },
+  {
+    "name": "T10 power glyph",
+    "group": "tower",
+    "center_voxels": [
+      2.65,
+      -7.74,
+      19.05
+    ],
+    "size_voxels": [
+      0.18,
+      0.06,
+      0.62
+    ],
+    "palette": "mint",
+    "emissive": true,
+    "screen": false
+  },
+  {
+    "name": "T11 data LED",
+    "group": "tower",
+    "center_voxels": [
+      -3,
+      -7.53,
+      19.4
+    ],
+    "size_voxels": [
+      0.35,
+      0.16,
+      0.35
+    ],
+    "palette": "amber",
+    "emissive": true,
+    "screen": false
+  },
+  {
+    "name": "T12 USB metal 1",
+    "group": "tower",
+    "center_voxels": [
+      -2.3,
+      -7.55,
+      17.6
+    ],
+    "size_voxels": [
+      1.7,
+      0.18,
+      0.72
+    ],
+    "palette": "metal",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T13 USB cavity 1",
+    "group": "tower",
+    "center_voxels": [
+      -2.3,
+      -7.68,
+      17.6
+    ],
+    "size_voxels": [
+      1.35,
+      0.09,
+      0.36
+    ],
+    "palette": "black",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T12 USB metal 2",
+    "group": "tower",
+    "center_voxels": [
+      0.1,
+      -7.55,
+      17.6
+    ],
+    "size_voxels": [
+      1.7,
+      0.18,
+      0.72
+    ],
+    "palette": "metal",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T13 USB cavity 2",
+    "group": "tower",
+    "center_voxels": [
+      0.1,
+      -7.68,
+      17.6
+    ],
+    "size_voxels": [
+      1.35,
+      0.09,
+      0.36
+    ],
+    "palette": "black",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T14 drive slot",
+    "group": "tower",
+    "center_voxels": [
+      0,
+      -7.55,
+      15.5
+    ],
+    "size_voxels": [
+      7,
+      0.16,
+      0.42
+    ],
+    "palette": "black",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T15 drive edge",
+    "group": "tower",
+    "center_voxels": [
+      0,
+      -7.64,
+      15.3
+    ],
+    "size_voxels": [
+      6.4,
+      0.08,
+      0.12
+    ],
+    "palette": "edge",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T16 front grille backing",
+    "group": "tower",
+    "center_voxels": [
+      0,
+      -7.45,
+      8.7
+    ],
+    "size_voxels": [
+      7.8,
+      0.14,
+      10.4
+    ],
+    "palette": "black",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T17 front vent slat 1",
+    "group": "tower",
+    "center_voxels": [
+      0,
+      -7.62,
+      4.7
+    ],
+    "size_voxels": [
+      7.2,
+      0.18,
+      0.62
+    ],
+    "palette": "case_light",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T18 front vent recess 1",
+    "group": "tower",
+    "center_voxels": [
+      0,
+      -7.55,
+      5.2
+    ],
+    "size_voxels": [
+      6.4,
+      0.08,
+      0.18
+    ],
+    "palette": "cyan_dark",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T17 front vent slat 2",
+    "group": "tower",
+    "center_voxels": [
+      0,
+      -7.62,
+      6.0
+    ],
+    "size_voxels": [
+      7.2,
+      0.18,
+      0.62
+    ],
+    "palette": "case_light",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T18 front vent recess 2",
+    "group": "tower",
+    "center_voxels": [
+      0,
+      -7.55,
+      6.5
+    ],
+    "size_voxels": [
+      6.4,
+      0.08,
+      0.18
+    ],
+    "palette": "cyan_dark",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T17 front vent slat 3",
+    "group": "tower",
+    "center_voxels": [
+      0,
+      -7.62,
+      7.300000000000001
+    ],
+    "size_voxels": [
+      7.2,
+      0.18,
+      0.62
+    ],
+    "palette": "case_light",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T18 front vent recess 3",
+    "group": "tower",
+    "center_voxels": [
+      0,
+      -7.55,
+      7.800000000000001
+    ],
+    "size_voxels": [
+      6.4,
+      0.08,
+      0.18
+    ],
+    "palette": "cyan_dark",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T17 front vent slat 4",
+    "group": "tower",
+    "center_voxels": [
+      0,
+      -7.62,
+      8.600000000000001
+    ],
+    "size_voxels": [
+      7.2,
+      0.18,
+      0.62
+    ],
+    "palette": "case_light",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T18 front vent recess 4",
+    "group": "tower",
+    "center_voxels": [
+      0,
+      -7.55,
+      9.100000000000001
+    ],
+    "size_voxels": [
+      6.4,
+      0.08,
+      0.18
+    ],
+    "palette": "cyan_dark",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T17 front vent slat 5",
+    "group": "tower",
+    "center_voxels": [
+      0,
+      -7.62,
+      9.9
+    ],
+    "size_voxels": [
+      7.2,
+      0.18,
+      0.62
+    ],
+    "palette": "case_light",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T18 front vent recess 5",
+    "group": "tower",
+    "center_voxels": [
+      0,
+      -7.55,
+      10.4
+    ],
+    "size_voxels": [
+      6.4,
+      0.08,
+      0.18
+    ],
+    "palette": "cyan_dark",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T17 front vent slat 6",
+    "group": "tower",
+    "center_voxels": [
+      0,
+      -7.62,
+      11.2
+    ],
+    "size_voxels": [
+      7.2,
+      0.18,
+      0.62
+    ],
+    "palette": "case_light",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T18 front vent recess 6",
+    "group": "tower",
+    "center_voxels": [
+      0,
+      -7.55,
+      11.7
+    ],
+    "size_voxels": [
+      6.4,
+      0.08,
+      0.18
+    ],
+    "palette": "cyan_dark",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T17 front vent slat 7",
+    "group": "tower",
+    "center_voxels": [
+      0,
+      -7.62,
+      12.5
+    ],
+    "size_voxels": [
+      7.2,
+      0.18,
+      0.62
+    ],
+    "palette": "case_light",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T18 front vent recess 7",
+    "group": "tower",
+    "center_voxels": [
+      0,
+      -7.55,
+      13.0
+    ],
+    "size_voxels": [
+      6.4,
+      0.08,
+      0.18
+    ],
+    "palette": "cyan_dark",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T19 cyan edge stripe",
+    "group": "tower",
+    "center_voxels": [
+      -4.85,
+      -7.36,
+      11.5
+    ],
+    "size_voxels": [
+      0.28,
+      0.17,
+      18.5
+    ],
+    "palette": "cyan",
+    "emissive": true,
+    "screen": false
+  },
+  {
+    "name": "T20 bottom front badge",
+    "group": "tower",
+    "center_voxels": [
+      0,
+      -7.52,
+      2.6
+    ],
+    "size_voxels": [
+      2.1,
+      0.14,
+      0.4
+    ],
+    "palette": "metal",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T21 right side frame",
+    "group": "tower",
+    "center_voxels": [
+      5.55,
+      0.5,
+      11.8
+    ],
+    "size_voxels": [
+      0.16,
+      13,
+      18
+    ],
+    "palette": "case_light",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T22 right inset",
+    "group": "tower",
+    "center_voxels": [
+      5.65,
+      0.5,
+      11.8
+    ],
+    "size_voxels": [
+      0.08,
+      11.8,
+      16.8
+    ],
+    "palette": "dark",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T23 pixel fan ring 00-02",
+    "group": "tower",
+    "center_voxels": [
+      5.74,
+      -1.0,
+      14.0
+    ],
+    "size_voxels": [
+      0.1,
+      0.94,
+      0.94
+    ],
+    "palette": "cyan_dark",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T23 pixel fan ring 00-03",
+    "group": "tower",
+    "center_voxels": [
+      5.74,
+      0.0,
+      14.0
+    ],
+    "size_voxels": [
+      0.1,
+      0.94,
+      0.94
+    ],
+    "palette": "cyan_dark",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T23 pixel fan ring 00-04",
+    "group": "tower",
+    "center_voxels": [
+      5.74,
+      1.0,
+      14.0
+    ],
+    "size_voxels": [
+      0.1,
+      0.94,
+      0.94
+    ],
+    "palette": "cyan_dark",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T23 pixel fan ring 00-05",
+    "group": "tower",
+    "center_voxels": [
+      5.74,
+      2.0,
+      14.0
+    ],
+    "size_voxels": [
+      0.1,
+      0.94,
+      0.94
+    ],
+    "palette": "cyan_dark",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T23 pixel fan ring 01-01",
+    "group": "tower",
+    "center_voxels": [
+      5.74,
+      -2.0,
+      13.0
+    ],
+    "size_voxels": [
+      0.1,
+      0.94,
+      0.94
+    ],
+    "palette": "cyan_dark",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T23 pixel fan ring 01-06",
+    "group": "tower",
+    "center_voxels": [
+      5.74,
+      3.0,
+      13.0
+    ],
+    "size_voxels": [
+      0.1,
+      0.94,
+      0.94
+    ],
+    "palette": "cyan_dark",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T23 pixel fan ring 02-00",
+    "group": "tower",
+    "center_voxels": [
+      5.74,
+      -3.0,
+      12.0
+    ],
+    "size_voxels": [
+      0.1,
+      0.94,
+      0.94
+    ],
+    "palette": "cyan_dark",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T23 pixel fan ring 02-07",
+    "group": "tower",
+    "center_voxels": [
+      5.74,
+      4.0,
+      12.0
+    ],
+    "size_voxels": [
+      0.1,
+      0.94,
+      0.94
+    ],
+    "palette": "cyan_dark",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T23 pixel fan ring 03-00",
+    "group": "tower",
+    "center_voxels": [
+      5.74,
+      -3.0,
+      11.0
+    ],
+    "size_voxels": [
+      0.1,
+      0.94,
+      0.94
+    ],
+    "palette": "cyan_dark",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T23 pixel fan ring 03-07",
+    "group": "tower",
+    "center_voxels": [
+      5.74,
+      4.0,
+      11.0
+    ],
+    "size_voxels": [
+      0.1,
+      0.94,
+      0.94
+    ],
+    "palette": "cyan_dark",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T23 pixel fan ring 04-00",
+    "group": "tower",
+    "center_voxels": [
+      5.74,
+      -3.0,
+      10.0
+    ],
+    "size_voxels": [
+      0.1,
+      0.94,
+      0.94
+    ],
+    "palette": "cyan_dark",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T23 pixel fan ring 04-07",
+    "group": "tower",
+    "center_voxels": [
+      5.74,
+      4.0,
+      10.0
+    ],
+    "size_voxels": [
+      0.1,
+      0.94,
+      0.94
+    ],
+    "palette": "cyan_dark",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T23 pixel fan ring 05-00",
+    "group": "tower",
+    "center_voxels": [
+      5.74,
+      -3.0,
+      9.0
+    ],
+    "size_voxels": [
+      0.1,
+      0.94,
+      0.94
+    ],
+    "palette": "cyan_dark",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T23 pixel fan ring 05-07",
+    "group": "tower",
+    "center_voxels": [
+      5.74,
+      4.0,
+      9.0
+    ],
+    "size_voxels": [
+      0.1,
+      0.94,
+      0.94
+    ],
+    "palette": "cyan_dark",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T23 pixel fan ring 06-01",
+    "group": "tower",
+    "center_voxels": [
+      5.74,
+      -2.0,
+      8.0
+    ],
+    "size_voxels": [
+      0.1,
+      0.94,
+      0.94
+    ],
+    "palette": "cyan_dark",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T23 pixel fan ring 06-06",
+    "group": "tower",
+    "center_voxels": [
+      5.74,
+      3.0,
+      8.0
+    ],
+    "size_voxels": [
+      0.1,
+      0.94,
+      0.94
+    ],
+    "palette": "cyan_dark",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T23 pixel fan ring 07-02",
+    "group": "tower",
+    "center_voxels": [
+      5.74,
+      -1.0,
+      7.0
+    ],
+    "size_voxels": [
+      0.1,
+      0.94,
+      0.94
+    ],
+    "palette": "cyan_dark",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T23 pixel fan ring 07-03",
+    "group": "tower",
+    "center_voxels": [
+      5.74,
+      0.0,
+      7.0
+    ],
+    "size_voxels": [
+      0.1,
+      0.94,
+      0.94
+    ],
+    "palette": "cyan_dark",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T23 pixel fan ring 07-04",
+    "group": "tower",
+    "center_voxels": [
+      5.74,
+      1.0,
+      7.0
+    ],
+    "size_voxels": [
+      0.1,
+      0.94,
+      0.94
+    ],
+    "palette": "cyan_dark",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T23 pixel fan ring 07-05",
+    "group": "tower",
+    "center_voxels": [
+      5.74,
+      2.0,
+      7.0
+    ],
+    "size_voxels": [
+      0.1,
+      0.94,
+      0.94
+    ],
+    "palette": "cyan_dark",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T24 fan blade top",
+    "group": "tower",
+    "center_voxels": [
+      5.81,
+      -0.5,
+      12.5
+    ],
+    "size_voxels": [
+      0.1,
+      2,
+      2
+    ],
+    "palette": "cyan",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T24 fan blade right",
+    "group": "tower",
+    "center_voxels": [
+      5.81,
+      2.5,
+      11.5
+    ],
+    "size_voxels": [
+      0.1,
+      2,
+      2
+    ],
+    "palette": "cyan",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T24 fan blade bottom",
+    "group": "tower",
+    "center_voxels": [
+      5.81,
+      1.5,
+      8.5
+    ],
+    "size_voxels": [
+      0.1,
+      2,
+      2
+    ],
+    "palette": "cyan",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T24 fan blade left",
+    "group": "tower",
+    "center_voxels": [
+      5.81,
+      -1.5,
+      9.5
+    ],
+    "size_voxels": [
+      0.1,
+      2,
+      2
+    ],
+    "palette": "cyan",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T25 fan hub",
+    "group": "tower",
+    "center_voxels": [
+      5.9,
+      0.5,
+      10.5
+    ],
+    "size_voxels": [
+      0.15,
+      2,
+      2
+    ],
+    "palette": "edge",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T26 fan hub pixel",
+    "group": "tower",
+    "center_voxels": [
+      6.01,
+      0.5,
+      10.5
+    ],
+    "size_voxels": [
+      0.09,
+      0.75,
+      0.75
+    ],
+    "palette": "metal",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T27 side top vent 1",
+    "group": "tower",
+    "center_voxels": [
+      5.76,
+      -3.5,
+      18.3
+    ],
+    "size_voxels": [
+      0.09,
+      1,
+      1.4
+    ],
+    "palette": "black",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T27 side top vent 2",
+    "group": "tower",
+    "center_voxels": [
+      5.76,
+      -1.5,
+      18.3
+    ],
+    "size_voxels": [
+      0.09,
+      1,
+      1.4
+    ],
+    "palette": "black",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T27 side top vent 3",
+    "group": "tower",
+    "center_voxels": [
+      5.76,
+      0.5,
+      18.3
+    ],
+    "size_voxels": [
+      0.09,
+      1,
+      1.4
+    ],
+    "palette": "black",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T27 side top vent 4",
+    "group": "tower",
+    "center_voxels": [
+      5.76,
+      2.5,
+      18.3
+    ],
+    "size_voxels": [
+      0.09,
+      1,
+      1.4
+    ],
+    "palette": "black",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T27 side top vent 5",
+    "group": "tower",
+    "center_voxels": [
+      5.76,
+      4.5,
+      18.3
+    ],
+    "size_voxels": [
+      0.09,
+      1,
+      1.4
+    ],
+    "palette": "black",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T28 panel screw -5 4",
+    "group": "tower",
+    "center_voxels": [
+      5.78,
+      -5,
+      4
+    ],
+    "size_voxels": [
+      0.12,
+      0.35,
+      0.35
+    ],
+    "palette": "screw",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T28 panel screw -5 19.5",
+    "group": "tower",
+    "center_voxels": [
+      5.78,
+      -5,
+      19.5
+    ],
+    "size_voxels": [
+      0.12,
+      0.35,
+      0.35
+    ],
+    "palette": "screw",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T28 panel screw 6 4",
+    "group": "tower",
+    "center_voxels": [
+      5.78,
+      6,
+      4
+    ],
+    "size_voxels": [
+      0.12,
+      0.35,
+      0.35
+    ],
+    "palette": "screw",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T28 panel screw 6 19.5",
+    "group": "tower",
+    "center_voxels": [
+      5.78,
+      6,
+      19.5
+    ],
+    "size_voxels": [
+      0.12,
+      0.35,
+      0.35
+    ],
+    "palette": "screw",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T29 rear plate",
+    "group": "tower",
+    "center_voxels": [
+      0,
+      8.07,
+      11.5
+    ],
+    "size_voxels": [
+      9.2,
+      0.14,
+      18.8
+    ],
+    "palette": "dark",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T30 PSU surround",
+    "group": "tower",
+    "center_voxels": [
+      0,
+      8.19,
+      5
+    ],
+    "size_voxels": [
+      7.2,
+      0.14,
+      4.3
+    ],
+    "palette": "case_light",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T31 PSU socket",
+    "group": "tower",
+    "center_voxels": [
+      -1.7,
+      8.3,
+      5
+    ],
+    "size_voxels": [
+      2.2,
+      0.12,
+      1.8
+    ],
+    "palette": "black",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T32 PSU switch",
+    "group": "tower",
+    "center_voxels": [
+      1.6,
+      8.32,
+      5
+    ],
+    "size_voxels": [
+      0.7,
+      0.12,
+      1.1
+    ],
+    "palette": "black",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T33 IO shield",
+    "group": "tower",
+    "center_voxels": [
+      -2.7,
+      8.23,
+      15.2
+    ],
+    "size_voxels": [
+      2.1,
+      0.15,
+      8.1
+    ],
+    "palette": "metal",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T34 rear port 1",
+    "group": "tower",
+    "center_voxels": [
+      -2.7,
+      8.34,
+      12.2
+    ],
+    "size_voxels": [
+      1.3,
+      0.1,
+      0.62
+    ],
+    "palette": "black",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T34 rear port 2",
+    "group": "tower",
+    "center_voxels": [
+      -2.7,
+      8.34,
+      13.7
+    ],
+    "size_voxels": [
+      1.3,
+      0.1,
+      0.62
+    ],
+    "palette": "black",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T34 rear port 3",
+    "group": "tower",
+    "center_voxels": [
+      -2.7,
+      8.34,
+      15.2
+    ],
+    "size_voxels": [
+      1.3,
+      0.1,
+      0.62
+    ],
+    "palette": "black",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T34 rear port 4",
+    "group": "tower",
+    "center_voxels": [
+      -2.7,
+      8.34,
+      16.7
+    ],
+    "size_voxels": [
+      1.3,
+      0.1,
+      0.62
+    ],
+    "palette": "black",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T34 rear port 5",
+    "group": "tower",
+    "center_voxels": [
+      -2.7,
+      8.34,
+      18.2
+    ],
+    "size_voxels": [
+      1.3,
+      0.1,
+      0.62
+    ],
+    "palette": "black",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T35 rear exhaust 1",
+    "group": "tower",
+    "center_voxels": [
+      1.6,
+      8.26,
+      13.4
+    ],
+    "size_voxels": [
+      4.2,
+      0.12,
+      0.5
+    ],
+    "palette": "case_light",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T35 rear exhaust 2",
+    "group": "tower",
+    "center_voxels": [
+      1.6,
+      8.26,
+      14.6
+    ],
+    "size_voxels": [
+      4.2,
+      0.12,
+      0.5
+    ],
+    "palette": "case_light",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T35 rear exhaust 3",
+    "group": "tower",
+    "center_voxels": [
+      1.6,
+      8.26,
+      15.8
+    ],
+    "size_voxels": [
+      4.2,
+      0.12,
+      0.5
+    ],
+    "palette": "case_light",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T35 rear exhaust 4",
+    "group": "tower",
+    "center_voxels": [
+      1.6,
+      8.26,
+      17.0
+    ],
+    "size_voxels": [
+      4.2,
+      0.12,
+      0.5
+    ],
+    "palette": "case_light",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T35 rear exhaust 5",
+    "group": "tower",
+    "center_voxels": [
+      1.6,
+      8.26,
+      18.2
+    ],
+    "size_voxels": [
+      4.2,
+      0.12,
+      0.5
+    ],
+    "palette": "case_light",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T36 PCI slot 1",
+    "group": "tower",
+    "center_voxels": [
+      0.5,
+      8.25,
+      8.0
+    ],
+    "size_voxels": [
+      5.7,
+      0.12,
+      0.36
+    ],
+    "palette": "case_light",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T36 PCI slot 2",
+    "group": "tower",
+    "center_voxels": [
+      0.5,
+      8.25,
+      8.85
+    ],
+    "size_voxels": [
+      5.7,
+      0.12,
+      0.36
+    ],
+    "palette": "case_light",
+    "emissive": false,
+    "screen": false
+  },
+  {
+    "name": "T36 PCI slot 3",
+    "group": "tower",
+    "center_voxels": [
+      0.5,
+      8.25,
+      9.7
+    ],
+    "size_voxels": [
+      5.7,
+      0.12,
+      0.36
+    ],
+    "palette": "case_light",
+    "emissive": false,
+    "screen": false
+  }
+]

@@ -1,0 +1,14 @@
+<!doctype html><meta charset="utf-8"><title>BrowserLink TV + Audio QA</title>
+<style>body{margin:40px;background:#162433;color:#e6f4ff;font:24px system-ui}button,input{font:inherit;padding:12px;margin:10px}button{background:#6cdec1;border:0;border-radius:8px}small{color:#a9c0d2}</style>
+<h1>TV · Shared browser · Spatial audio</h1><p>Local test page / 本机音效测试</p>
+<button id="tone">Start quiet test tone</button><button id="stop">Stop tone</button><p id="state">Audio stopped</p>
+<input id="text" placeholder="中文输入测试"><button id="count">Clicks: 0</button>
+<p><small>Move around the television in Minecraft. Audio should follow its location and fade with distance.</small></p>
+<script>
+let context,oscillator,gain,count=0;
+document.querySelector('#tone').onclick=async()=>{
+ if(context)await context.close();context=new AudioContext();oscillator=context.createOscillator();gain=context.createGain();gain.gain.value=.04;oscillator.frequency.value=440;oscillator.connect(gain).connect(context.destination);oscillator.start();document.querySelector('#state').textContent='440 Hz test tone active · low volume';
+};
+document.querySelector('#stop').onclick=()=>{context?.close();context=null;document.querySelector('#state').textContent='Audio stopped';};
+document.querySelector('#count').onclick=e=>e.target.textContent='Clicks: '+(++count);
+</script>

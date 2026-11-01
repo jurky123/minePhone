@@ -1,0 +1,44 @@
+plugins {
+    id 'java'
+    id 'net.minecraftforge.gradle' version '6.0.54'
+}
+group = 'dev.browserlink'
+version = '0.9.4'
+base { archivesName = 'browserlink-1.20.1' }
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+minecraft {
+    mappings channel: 'official', version: '1.20.1'
+    runs {
+        configureEach {
+            workingDirectory project.file('run')
+            property 'forge.logging.console.level', 'info'
+            mods { browserlink { source sourceSets.main } }
+        }
+        client {
+            if (project.hasProperty('qaNativeDir')) property 'org.lwjgl.librarypath', project.property('qaNativeDir')
+            if (project.hasProperty('qaBenchmark')) property 'browserlink.benchmark', 'true'
+            if (project.hasProperty('qaWorld')) args '--quickPlaySingleplayer', project.property('qaWorld')
+        }
+        server { args '--nogui' }
+    }
+}
+repositories { mavenCentral() }
+jarJar.enable()
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.20.1-47.4.16'
+    implementation('io.netty:netty-codec-http:4.1.82.Final') { transitive = false }
+    minecraftLibrary('io.netty:netty-codec-http:4.1.82.Final') { transitive = false }
+    jarJar('io.netty:netty-codec-http:[4.1.82.Final,4.1.83.Final)') {
+        transitive = false
+        jarJar.pin(it, '4.1.82.Final')
+    }
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.2'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+tasks.named('test', Test) { useJUnitPlatform() }
+tasks.named('jar', Jar) {
+    manifest { attributes 'Implementation-Version': project.version }
+    finalizedBy 'reobfJar'
+}
+tasks.named('jarJar') { finalizedBy 'reobfJarJar' }

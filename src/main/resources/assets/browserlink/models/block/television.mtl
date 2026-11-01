@@ -1,0 +1,6 @@
+newmtl atlas
+Kd 1 1 1
+map_Kd browserlink:block/tv_body_atlas
+newmtl screen
+Kd 1 1 1
+map_Kd browserlink:block/tv_screen

@@ -1,0 +1,20 @@
+{
+  "block.browserlink.computer": "BrowserLink 电脑",
+  "item.browserlink.phone": "BrowserLink 手机",
+  "key.browserlink.open": "打开 BrowserLink",
+  "key.categories.browserlink": "BrowserLink",
+  "screen.browserlink.title": "BrowserLink / 本机浏览器",
+  "screen.browserlink.disconnect": "断开连接",
+  "screen.browserlink.text": "输入或粘贴文字，然后发送",
+  "screen.browserlink.send": "发送",
+  "screen.browserlink.waiting": "请通过 BrowserLink 扩展连接一个标签页",
+  "screen.browserlink.help": "点击网页开始操作 / Ctrl+V 粘贴 / Esc 返回游戏",
+  "block.browserlink.computer_chair": "BrowserLink 电脑椅",
+  "screen.browserlink.connect_help": "Chrome 连接说明",
+  "screen.browserlink.address": "输入网址，Enter 打开；+ 新标签页",
+  "screen.browserlink.rotate": "旋转",
+  "block.browserlink.television": "浏览器电视",
+  "key.browserlink.rotate": "切换手持手机横竖屏",
+  "key.browserlink.metrics": "切换浏览器性能面板",
+  "key.browserlink.fullscreen": "切换浏览器兼容无边框全屏"
+}

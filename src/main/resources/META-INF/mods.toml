@@ -1,0 +1,21 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+[[mods]]
+modId="browserlink"
+version="0.9.4"
+displayName="BrowserLink"
+authors="BrowserLink contributors"
+description='''Connect your existing browser tab to a computer block and handheld phone. Requires the companion Chromium extension. Your browser session stays on your computer.'''
+[[dependencies.browserlink]]
+modId="forge"
+mandatory=true
+versionRange="[47.4.16,48)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.browserlink]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.20.2)"
+ordering="NONE"
+side="BOTH"
