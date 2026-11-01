@@ -4,6 +4,15 @@ let watchdog=null,snapshotBusy=false,lastLiveFrame=0;
 let streamEnabled=true,policyHeight=1440,policyFps=30,policyTimer=null,policyRevision=0;
 let connectionWarning='',mediaError='',captureFormat='jpeg',supportsJpeg=false,videoTab=null,lastVideoAlive=0;
 const videoLive=()=>videoTab===tabId&&Date.now()-lastVideoAlive<3500;
+function captureStatus(video){
+  if(tabId===null)return '';
+  if(!bridgeReady||!video?.ready)return '等待游戏连接';
+  if(!video.enabled)return '采集已暂停 · 游戏暂无显示需求';
+  const age=video.lastSentAgeMs;
+  if(!Number.isFinite(age)||age>3500)return '近期无画面发送 · 静态页面或采集停滞';
+  const sources={tabCapture:'标签页视频流',cdp:'CDP 连续截屏',watchdog:'watchdog 补帧 · 视频流未及时更新'};
+  return (sources[video.lastSentSource]||'画面来源未知')+' · 最近发送 '+Math.round(age)+' ms 前';
+}
 const effectiveFormat=()=>captureFormat==='jpeg'&&supportsJpeg?'jpeg':'png';
 const effectiveQuality=()=>Math.min(quality,policyHeight);
 // Executed only in the explicitly connected tab, following the popup action.
@@ -263,10 +272,10 @@ chrome.runtime.onMessage.addListener((msg,sender,reply)=>{
   (async()=>{
     await restored;
     if(msg.type==='connection-warning'){connectionWarning=msg.message;return {ok:true};}
-    if(msg.type==='video-alive'&&msg.tabId===tabId){const geometry=await captureGeometry(tabId).catch(()=>null);const was=videoLive();videoTab=tabId;lastVideoAlive=Date.now();if(!was){clearTimeout(frameTimer);frameTimer=null;pendingFrame=null;void chrome.debugger.sendCommand({tabId},'Page.stopScreencast').catch(()=>{});}return {ok:true,geometry};}
+    if(msg.type==='video-alive'&&msg.tabId===tabId){const id=tabId,gen=generation,was=videoLive();videoTab=id;lastVideoAlive=Date.now();if(!was){clearTimeout(frameTimer);frameTimer=null;pendingFrame=null;void chrome.debugger.sendCommand({tabId:id},'Page.stopScreencast').catch(()=>{});}const geometry=await captureGeometry(id).catch(()=>null);return id===tabId&&gen===generation?{ok:true,geometry}:{ok:false};}
     if(msg.type==='state'){
       const video=await chrome.runtime.sendMessage({target:'offscreen',type:'diagnostics'}).catch(()=>null);
-      return {status,tabId,mediaError,connectionWarning,video,source:tabId===null?'':video?.video?(video.enabled?'标签页视频流':'标签页视频流 · 游戏暂无显示需求'):videoLive()?'标签页视频流':'兼容截屏 · 视频卡顿时请重新点击连接'};
+      return {status,tabId,mediaError,connectionWarning,video,source:captureStatus(video)};
     }
     if(msg.type==='connect'){await connect(msg);return {ok:true};}
     if(msg.type==='keepalive'){

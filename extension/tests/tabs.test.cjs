@@ -17,6 +17,19 @@ test('switch attaches only selected page, detaches old page and publishes metada
  assert.ok(h.calls.findIndex(c=>c.type==='metadata')<h.calls.findIndex(c=>c.command==='Page.startScreencast'));
 });
 
+test('capture status uses recently sent source rather than worker existence',async()=>{
+ const h=await harness();
+ const status=v=>{h.ctx.diagnostic=v;return vm.runInContext('captureStatus(diagnostic)',h.ctx);};
+ const base={ready:true,enabled:true,video:true,lastSentAgeMs:30};
+ assert.match(status({...base,lastSentSource:'watchdog'}),/watchdog/);
+ assert.match(status({...base,lastSentSource:'cdp'}),/CDP/);
+ assert.match(status({...base,lastSentSource:'tabCapture'}),/标签页视频流/);
+ assert.match(status({...base,lastSentSource:'tabCapture',lastSentAgeMs:5000}),/静态页面或采集停滞/);
+ assert.match(status({...base,lastSentAgeMs:null}),/近期无画面/);
+ assert.match(status({...base,enabled:false}),/采集已暂停/);
+ assert.match(status({...base,ready:false}),/等待游戏连接/);
+});
+
 test('closing active tab attaches neighbour before removal and keeps bridge connected',async()=>{
  const h=await harness();await vm.runInContext('closeTab(42)',h.ctx);
  assert.ok(h.calls.findIndex(c=>c.attach===43)<h.calls.findIndex(c=>c.remove===42));

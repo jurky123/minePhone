@@ -2,6 +2,7 @@
 // element on older Chrome versions. Only binary images cross the socket.
 let videoPhase='idle',videoError='',videoFrames=0,tabVideo=null,videoTimer=null,videoClock=null,videoGeneration=0,videoPolicy={enabled:true,height:1440,fps:30,format:'png'};
 let videoStreamStats=[],streamWorker=null,streamTab=null,streamConnection=null,streamEpoch=0,captureTrack=null,captureHeight='',captureGeometryValue=null,videoRetry=null;
+let lastVideoFrameAt=0,workerDispatchMs=0;
 function captureSize(geometry,height){
   const w=geometry?.width||2560,h=geometry?.height||1440;
   const scale=Math.min(1,height/h,Math.round(height*16/9)/w);
@@ -15,11 +16,12 @@ function noticeVideo(id,gen){
 }
 function updateVideoFlow(){
   clearTimeout(videoRetry);videoRetry=null;
-  const size=captureSize(captureGeometryValue,videoPolicy.height),key=size.width+'x'+size.height;
+  const captureFps=Math.max(5,Math.min(30,videoPolicy.fps));
+  const size=captureSize(captureGeometryValue,videoPolicy.height),key=size.width+'x'+size.height+'@'+captureFps;
   if(captureTrack&&captureHeight!==key){
     captureHeight=key;
     const track=captureTrack;
-    void track.applyConstraints({width:{exact:size.width},height:{exact:size.height},frameRate:{max:30}}).catch(e=>{if(track===captureTrack)videoError=e.message;});
+    void track.applyConstraints({width:{exact:size.width},height:{exact:size.height},frameRate:{max:captureFps}}).catch(e=>{if(track===captureTrack)videoError=e.message;});
   }
   if(!streamWorker)return;
   if(streamConnection!==socket){streamConnection=socket;streamEpoch++;}
@@ -34,6 +36,7 @@ function stopVideo(){
   videoClock?.terminate();videoClock=null;
   streamWorker?.terminate();streamWorker=null;streamTab=null;
   captureTrack=null;captureHeight=0;
+  lastVideoFrameAt=0;
   if(tabVideo){tabVideo.pause();tabVideo.srcObject=null;tabVideo.remove();tabVideo=null;}
 }
 async function startVideo(stream,id,geometry){
@@ -45,10 +48,11 @@ async function startVideo(stream,id,geometry){
     videoClock=new Worker('video-clock.js');videoClock.onmessage=()=>{if(gen===videoGeneration)updateVideoFlow();};
     worker.onmessage=({data})=>{
       if(gen!==videoGeneration||streamWorker!==worker||metadata?.activeId!==id)return;
-      if(data.stats){videoStreamStats=[data.stats];if(ready&&socket?.readyState===WebSocket.OPEN&&socket.bufferedAmount<512*1024)socket.send(JSON.stringify({type:'capture-stats',...data.stats,buffered:socket.bufferedAmount}));return;}
+      if(data.stats){videoStreamStats=[data.stats];if(ready&&socket?.readyState===WebSocket.OPEN&&socket.bufferedAmount<512*1024)socket.send(JSON.stringify({type:'capture-stats',...data.stats,workerDispatchMs,buffered:socket.bufferedAmount}));return;}
       if(data.error){videoError=data.error;stopVideo();return;}
       if(data.blob&&data.epoch===streamEpoch&&streamConnection===socket&&ready&&videoPolicy.enabled&&socket?.readyState===WebSocket.OPEN&&socket.bufferedAmount<512*1024&&data.blob.size<=16*1024*1024){
-        videoPhase='stream';videoFrames++;frameVersion++;pendingFrame={tabId:id,blob:data.blob};if(frameTimer===null)flushFrame();
+        lastVideoFrameAt=Date.now();workerDispatchMs=Number.isFinite(data.producedAt)?Math.max(0,lastVideoFrameAt-data.producedAt):0;
+        videoPhase='stream';videoFrames++;frameVersion++;pendingFrame={tabId:id,blob:data.blob,source:'tabCapture',queuedAt:Date.now()};if(frameTimer===null)flushFrame();
         if(Date.now()-lastNotice>1000){lastNotice=Date.now();noticeVideo(id,gen);}
       }
       updateVideoFlow();
@@ -85,7 +89,7 @@ async function startVideo(stream,id,geometry){
         for(let i=0;i<binary.length;i++)bytes[i]=binary.charCodeAt(i);
         const blob=new Blob([bytes],{type:format});
         if(!current()||connection!==socket||!ready||!videoPolicy.enabled||blob.size>16*1024*1024)return;
-        videoPhase='encoded';videoFrames++;frameVersion++;pendingFrame={tabId:id,blob};if(frameTimer===null)flushFrame();
+        lastVideoFrameAt=Date.now();videoPhase='encoded';videoFrames++;frameVersion++;pendingFrame={tabId:id,blob,source:'tabCapture',queuedAt:Date.now()};if(frameTimer===null)flushFrame();
         // Status delivery must never hold the next video frame hostage to CDP.
         if(Date.now()-lastNotice>1000){lastNotice=Date.now();noticeVideo(id,gen);}
       }

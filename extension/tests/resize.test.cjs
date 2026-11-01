@@ -11,6 +11,16 @@ async function harness(){
 test('fallback pixels are resized to selected limit without changing webpage layout',async()=>{
  const h=await harness(),pending=vm.runInContext('resizeSnapshot(msg)',h.ctx);await new Promise(setImmediate);assert.deepEqual(h.sizes,[[1280,720]]);h.finish();await pending;assert.equal(h.sent.length,1);
 });
+
+test('diagnostics report the frame actually sent, including watchdog fallback',async()=>{
+ const h=await harness(),pending=vm.runInContext('resizeSnapshot(msg)',h.ctx);await new Promise(setImmediate);h.finish();await pending;
+ assert.equal(vm.runInContext('frameDiagnostics().lastSentSource',h.ctx),'watchdog');
+ vm.runInContext("pendingFrame={tabId:42,blob:new Blob(['video']),source:'tabCapture',queuedAt:Date.now()-20};flushFrame()",h.ctx);
+ assert.equal(vm.runInContext('frameDiagnostics().lastSentSource',h.ctx),'tabCapture');
+ assert.ok(vm.runInContext('frameDiagnostics().sendWaitMs>=20',h.ctx));
+ vm.runInContext("socket.bufferedAmount=600000;pendingFrame={tabId:42,blob:new Blob(['other']),source:'cdp'};flushFrame()",h.ctx);
+ assert.equal(vm.runInContext('frameDiagnostics().lastSentSource',h.ctx),'tabCapture');
+});
 test('resizing result is discarded if live frame or session changes while encoding',async()=>{
  for(const change of ['frameVersion++','generation++','metadata={activeId:43}']){
   const h=await harness(),pending=vm.runInContext('resizeSnapshot(msg)',h.ctx);await new Promise(setImmediate);vm.runInContext(change,h.ctx);h.finish();await pending;assert.equal(h.sent.length,0);

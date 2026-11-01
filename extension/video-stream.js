@@ -6,13 +6,14 @@ self.onmessage=({data})=>{
   if(data.type==='start'&&!running){running=true;void consume(data.readable);}
 };
 async function consume(readable){
-  const reader=readable.getReader(),canvas=new OffscreenCanvas(1,1),ctx=canvas.getContext('2d',{alpha:false});let nextDue=-Infinity,at=performance.now(),inputs=0,outputs=0,encodeMs=0,drawMs=0;
+  const reader=readable.getReader(),canvas=new OffscreenCanvas(1,1),ctx=canvas.getContext('2d',{alpha:false});let nextDue=-Infinity,at=performance.now(),inputs=0,outputs=0,encodeMs=0,drawMs=0,frameMs=0,lastTimestamp=null,timestampGapMs=0;
   try{
     for(;;){
       const {value:frame,done}=await reader.read();if(done)break;
       try{
         const now=performance.now(),p=policy;inputs++;
-        if(now-at>=1000){self.postMessage({stats:{inputFps:inputs*1000/(now-at),outputFps:outputs*1000/(now-at),encodeMs,drawMs}});at=now;inputs=0;outputs=0;}
+        if(Number.isFinite(frame.timestamp)){if(lastTimestamp!==null)timestampGapMs=(frame.timestamp-lastTimestamp)/1000;lastTimestamp=frame.timestamp;}
+        if(now-at>=1000){self.postMessage({stats:{consumeFps:inputs*1000/(now-at),outputFps:outputs*1000/(now-at),encodeMs,drawMs,frameMs,timestampGapMs}});at=now;inputs=0;outputs=0;}
         const interval=1000/p.fps;
         if(!p.enabled||!p.credit||now<nextDue-2)continue;
         const scale=Math.min(1,p.height/frame.displayHeight,Math.round(p.height*16/9)/frame.displayWidth);
@@ -23,8 +24,9 @@ async function consume(readable){
         nextDue=(nextDue<now-interval?now:nextDue)+interval;
         policy={...policy,credit:false};ctx.drawImage(frame,0,0,w,h);
         drawMs=performance.now()-now;
+        const encodeStart=performance.now();
         const blob=await canvas.convertToBlob({type:p.format==='jpeg'?'image/jpeg':'image/png',quality:.82});
-        outputs++;encodeMs=performance.now()-now;self.postMessage({blob,epoch:p.epoch});
+        outputs++;encodeMs=performance.now()-encodeStart;frameMs=performance.now()-now;self.postMessage({blob,epoch:p.epoch,producedAt:Date.now()});
       }finally{frame.close();}
     }
   }catch(error){self.postMessage({error:error.message});}

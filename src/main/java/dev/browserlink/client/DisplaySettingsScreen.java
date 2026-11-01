@@ -18,7 +18,7 @@ final class DisplaySettingsScreen extends Screen {
         });
     }
     @Override protected void init(){
-        int y=Math.max(26,height/2-112);
+        int y=Math.max(26,height/2-124);
         row(y,"自适应画质 / 按需刷新："+(s.adaptive?"开":"关"),()->s.adaptive=!s.adaptive);
         row(y+24,"手机方向："+(s.landscape?"横屏":"竖屏")+"（手持时 F7 切换）",()->s.landscape=!s.landscape);
         slider(y+48,"手持大小 (%)",s.handScale,.7f,1.15f,v->s.handScale=(float)v);
@@ -27,7 +27,8 @@ final class DisplaySettingsScreen extends Screen {
         slider(y+120,"手机近屏大小 (%)",s.focusScale,.7f,1,v->s.focusScale=(float)v);
         row(y+144,"性能面板："+(s.metrics?"开":"关")+"（F9）",()->s.metrics=!s.metrics);
         row(y+168,"浏览器兼容无边框全屏："+(BrowserFullscreen.active()?"开":"关")+"（F6）",BrowserFullscreen::toggle);
-        addRenderableWidget(Button.builder(Component.literal("完成"),b->onClose()).bounds(width/2-140,y+200,280,20).build());
+        row(y+192,"网页流畅优先："+(s.browserGameFps==0?"关":"游戏上限 "+s.browserGameFps+" FPS"),()->s.browserGameFps=s.browserGameFps==0?60:s.browserGameFps==60?40:s.browserGameFps==40?30:0);
+        addRenderableWidget(Button.builder(Component.literal("完成"),b->onClose()).bounds(width/2-140,y+224,280,20).build());
     }
     @Override public void render(GuiGraphics g,int x,int y,float partial){renderBackground(g);g.drawCenteredString(font,title,width/2,10,0xffffff);super.render(g,x,y,partial);}
     @Override public void onClose(){minecraft.setScreen(parent);}

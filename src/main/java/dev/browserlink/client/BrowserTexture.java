@@ -85,7 +85,8 @@ public final class BrowserTexture {
     public String stats(){
         long now=System.nanoTime();double elapsed=(now-sampleAt)/1_000_000_000.0;
         if(elapsed>=1){long r=received.get(),b=bytes.get();
-            metrics=String.format(java.util.Locale.ROOT,"%dx%d | RX %.1f / GPU %.1f fps | %.2f MiB/s | decode %.1f / upload %.1f ms | drop %d",width(),height(),(r-sampleReceived)/elapsed,(uploaded-sampleUploaded)/elapsed,(b-sampleBytes)/elapsed/1048576.0,decodeMs,uploadMs,dropped.get());
+            metrics=String.format(java.util.Locale.ROOT,"%dx%d | RX %.1f / texture %.1f fps | %.2f MiB/s | decode %.1f / upload-call %.1f ms | drop %d",width(),height(),(r-sampleReceived)/elapsed,(uploaded-sampleUploaded)/elapsed,(b-sampleBytes)/elapsed/1048576.0,decodeMs,uploadMs,dropped.get());
+            metrics+=" | game "+Minecraft.getInstance().getFps()+" FPS | focus "+Minecraft.getInstance().isWindowActive();
             if(Boolean.getBoolean("browserlink.benchmark"))com.mojang.logging.LogUtils.getLogger().info("BrowserLink benchmark: {} | mode {} | connected {} | age {} ms",metrics,DisplayDemand.mode,ClientRuntime.connected(),ageMillis());
             sampleAt=now;sampleReceived=r;sampleUploaded=uploaded;sampleBytes=b;
         }return metrics;

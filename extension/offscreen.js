@@ -1,6 +1,13 @@
 let socket=null,heartbeat=null,retryTimer=null,helloTimer=null,generation=0,ready=false,metadata=null;
 let pendingFrame=null,frameTimer=null;
 let frameVersion=0;
+let lastSentAt=0,lastSentSource='',sendWaitMs=0;
+function frameDiagnostics(){
+  return {lastSentSource,lastSentAgeMs:lastSentAt?Math.max(0,Date.now()-lastSentAt):null,sendWaitMs,
+    videoFrameAgeMs:typeof lastVideoFrameAt==='undefined'||!lastVideoFrameAt?null:Math.max(0,Date.now()-lastVideoFrameAt),
+    workerDispatchMs:typeof workerDispatchMs==='undefined'?null:workerDispatchMs,
+    track:typeof captureTrack==='undefined'||!captureTrack?null:{readyState:captureTrack.readyState,muted:captureTrack.muted}};
+}
 async function resizeSnapshot(msg){
   const version=++frameVersion,gen=generation;
   if(!ready||msg.tabId!==metadata?.activeId||typeof msg.data!=='string'||msg.data.length>64*1024*1024)return;
@@ -18,7 +25,7 @@ async function resizeSnapshot(msg){
     blob=await canvas.convertToBlob({type:'image/png'});
   }finally{image.close();}
   if(gen!==generation||version!==frameVersion||!ready||msg.tabId!==metadata?.activeId||blob.size>16*1024*1024)return;
-  pendingFrame={tabId:msg.tabId,blob};if(frameTimer===null)flushFrame();
+  pendingFrame={tabId:msg.tabId,blob,source:'watchdog',queuedAt:Date.now()};if(frameTimer===null)flushFrame();
 }
 function flushFrame(){
   frameTimer=null;
@@ -26,12 +33,15 @@ function flushFrame(){
   if(socket.bufferedAmount>=512*1024){frameTimer=setTimeout(flushFrame,16);return;}
   const frame=pendingFrame;pendingFrame=null;
   if(frame.tabId!==metadata?.activeId)return;
-  if(frame.blob){socket.send(frame.blob);return;}
+  if(frame.blob){socket.send(frame.blob);markSent(frame);return;}
   const binary=atob(frame.data),bytes=new Uint8Array(binary.length);
   for(let i=0;i<binary.length;i++)bytes[i]=binary.charCodeAt(i);
   socket.send(new Blob([bytes],{type:frame.format==='jpeg'?'image/jpeg':'image/png'}));
+  markSent(frame);
 }
+function markSent(frame){lastSentAt=Date.now();lastSentSource=frame.source||'cdp';sendWaitMs=frame.queuedAt?Math.max(0,lastSentAt-frame.queuedAt):0;}
 function cleanup(){
+  lastSentAt=0;lastSentSource='';sendWaitMs=0;
   if(typeof stopAudio==='function')void stopAudio();
   clearTimeout(frameTimer);frameTimer=null;pendingFrame=null;
   generation++;ready=false;clearTimeout(retryTimer);clearTimeout(helloTimer);clearInterval(heartbeat);
@@ -72,7 +82,7 @@ function start(){
 }
 chrome.runtime.onMessage.addListener((msg,sender,reply)=>{
   if(msg.target!=='offscreen'||sender.id!==chrome.runtime.id)return;
-  if(msg.type==='diagnostics'){reply({streamStats:typeof videoStreamStats==='undefined'?null:videoStreamStats,phase:typeof videoPhase==='undefined'?'':videoPhase,buffered:socket?.bufferedAmount,ready,policy:typeof videoPolicy==='undefined'?null:videoPolicy,frames:typeof videoFrames==='undefined'?0:videoFrames,error:typeof videoError==='undefined'?'':videoError,video:(typeof tabVideo!=='undefined'&&!!tabVideo)||(typeof streamWorker!=='undefined'&&!!streamWorker),playback:typeof tabVideo==='undefined'||!tabVideo?null:{ready:tabVideo.readyState,paused:tabVideo.paused,time:tabVideo.currentTime,width:tabVideo.videoWidth,track:tabVideo.srcObject?.getVideoTracks()[0]?.readyState},enabled:typeof videoPolicy!=='undefined'&&videoPolicy.enabled});return;}
+  if(msg.type==='diagnostics'){reply({...frameDiagnostics(),streamStats:typeof videoStreamStats==='undefined'?null:videoStreamStats,phase:typeof videoPhase==='undefined'?'':videoPhase,buffered:socket?.bufferedAmount,ready,policy:typeof videoPolicy==='undefined'?null:videoPolicy,frames:typeof videoFrames==='undefined'?0:videoFrames,error:typeof videoError==='undefined'?'':videoError,video:(typeof tabVideo!=='undefined'&&!!tabVideo)||(typeof streamWorker!=='undefined'&&!!streamWorker),playback:typeof tabVideo==='undefined'||!tabVideo?null:{ready:tabVideo.readyState,paused:tabVideo.paused,time:tabVideo.currentTime,width:tabVideo.videoWidth,track:tabVideo.srcObject?.getVideoTracks()[0]?.readyState},enabled:typeof videoPolicy!=='undefined'&&videoPolicy.enabled});return;}
   if(msg.type==='audio-start'){
     if(msg.tabId!==metadata?.activeId){reply({ok:false,error:'标签页已切换'});return;}
     startAudio(msg.streamId,msg.tabId,msg.geometry).then(()=>reply({ok:true}),e=>reply({ok:false,error:e.message}));return true;
@@ -88,13 +98,14 @@ chrome.runtime.onMessage.addListener((msg,sender,reply)=>{
     if(msg.type==='start')start();
     if(msg.type==='stop')cleanup();
     if(msg.type==='metadata'){
+      if(metadata?.activeId!==msg.state.activeId){lastSentAt=0;lastSentSource='';sendWaitMs=0;}
       metadata=msg.state;if(ready&&socket?.readyState===WebSocket.OPEN)socket.send(JSON.stringify(metadata));
     }
     if(msg.type==='clipboard'&&ready&&socket?.readyState===WebSocket.OPEN)socket.send(JSON.stringify({type:'clipboard',text:msg.text}));
     if(msg.type==='report'&&ready&&socket?.readyState===WebSocket.OPEN)socket.send(JSON.stringify({type:'status',message:msg.message}));
     if(msg.type==='frame'&&ready&&socket?.readyState===WebSocket.OPEN&&msg.tabId===metadata?.activeId&&typeof msg.data==='string'&&msg.data.length<=22369624){
       frameVersion++;
-      pendingFrame=msg;if(frameTimer===null)flushFrame();
+      pendingFrame={...msg,source:'cdp',queuedAt:Date.now()};if(frameTimer===null)flushFrame();
     }
     reply({ok:true});
   }catch(e){reply({ok:false,error:e.message});}

@@ -3,7 +3,7 @@ loaderVersion="[47,)"
 license="MIT"
 [[mods]]
 modId="browserlink"
-version="0.9.4"
+version="0.9.5"
 displayName="BrowserLink"
 authors="BrowserLink contributors"
 description='''Connect your existing browser tab to a computer block and handheld phone. Requires the companion Chromium extension. Your browser session stays on your computer.'''

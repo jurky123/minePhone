@@ -13,6 +13,12 @@ test('direct stream updates capture limits only when quality changes',async()=>{
  vm.runInContext('updateVideoFlow();videoPolicy.height=1440;updateVideoFlow()',h.ctx);assert.equal(h.constraints.length,2);assert.equal(h.constraints[1].height.exact,1440);
 });
 
+test('lower requested FPS also lowers capture rate instead of discarding 30 FPS input',async()=>{
+ const h=await harness();vm.runInContext('videoPolicy.fps=15;updateVideoFlow()',h.ctx);
+ assert.equal(h.constraints.at(-1).frameRate.max,15);
+ const count=h.constraints.length;vm.runInContext('updateVideoFlow()',h.ctx);assert.equal(h.constraints.length,count);
+});
+
 test('capture geometry preserves a wide browser viewport instead of padding to 16:9',async()=>{
  const h=await harness();
  vm.runInContext('captureGeometryValue={width:2400,height:1000};updateVideoFlow()',h.ctx);

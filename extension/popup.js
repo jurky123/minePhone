@@ -2,6 +2,12 @@ const $ = id => document.getElementById(id);
 async function refresh() {
   const state = await chrome.runtime.sendMessage({target:"worker",type:"state"});
   $("status").textContent = (state.status || "请选择要显示的标签页，然后点击连接。无需配对码。")+(state.source?'\n'+state.source:'')+(state.connectionWarning?'\n'+state.connectionWarning:'')+(state.mediaError?'\n'+state.mediaError:'')+(state.video?.error?'\n'+state.video.error:'');
+  const v=state.video,s=v?.streamStats?.[0],fmt=n=>Number.isFinite(n)?n.toFixed(1):'—';
+  if(v){
+    $("status").textContent+='\n视频帧年龄 '+fmt(v.videoFrameAgeMs)+' ms'+(v.track?' · track '+v.track.readyState+(v.track.muted?' / muted':''):'');
+    if(s)$("status").textContent+='\n消费 / 编码输出 '+fmt(s.consumeFps)+' / '+fmt(s.outputFps)+' FPS（最近采样）\n绘制 / 编码 '+fmt(s.drawMs)+' / '+fmt(s.encodeMs)+' ms';
+    $("status").textContent+='\n线程投递 / 发送等待 '+fmt(v.workerDispatchMs)+' / '+fmt(v.sendWaitMs)+' ms';
+  }
 }
 (async () => {
   const saved = await chrome.storage.local.get(["fps","quality","captureFormat"]);

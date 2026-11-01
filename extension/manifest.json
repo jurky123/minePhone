@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "BrowserLink for Minecraft",
-  "version": "0.9.4",
+  "version": "0.9.5",
   "description": "Share a selected, already signed-in browser tab with your local Minecraft phone or computer.",
   "minimum_chrome_version": "116",
   "permissions": [

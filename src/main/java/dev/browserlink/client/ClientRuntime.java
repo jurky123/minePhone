@@ -133,6 +133,7 @@ public final class ClientRuntime {
             while(ROTATE.consumeClick())if(mc.player!=null&&(mc.player.getMainHandItem().is(BrowserLink.PHONE.get())||mc.player.getOffhandItem().is(BrowserLink.PHONE.get()))){DisplaySettings.INSTANCE.landscape=!DisplaySettings.INSTANCE.landscape;DisplaySettings.INSTANCE.save();}
             while(METRICS.consumeClick()){DisplaySettings.INSTANCE.metrics=!DisplaySettings.INSTANCE.metrics;DisplaySettings.INSTANCE.save();}
             DisplayDemand.tick();
+            BrowserRenderBudget.tick();
             BrowserAudio.tick();
             if(Boolean.getBoolean("browserlink.benchmark"))TEXTURE.stats();
         }

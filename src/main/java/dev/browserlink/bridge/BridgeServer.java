@@ -123,7 +123,7 @@ public final class BridgeServer implements AutoCloseable {
                         ctx.writeAndFlush(new TextWebSocketFrame("{\"type\":\"pong\"}"));
                     } else if (type.equals("capture-stats") && Boolean.getBoolean("browserlink.benchmark")) {
                         var clean=new JsonObject();
-                        for(String key:new String[]{"inputFps","outputFps","drawMs","encodeMs","buffered"}){
+                        for(String key:new String[]{"consumeFps","outputFps","drawMs","encodeMs","frameMs","timestampGapMs","workerDispatchMs","buffered"}){
                             if(msg.has(key)&&msg.get(key).isJsonPrimitive()&&msg.get(key).getAsJsonPrimitive().isNumber()){
                                 double v=msg.get(key).getAsDouble();if(Double.isFinite(v))clean.addProperty(key,v);
                             }

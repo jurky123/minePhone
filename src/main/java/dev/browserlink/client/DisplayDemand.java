@@ -9,6 +9,7 @@ import net.minecraft.world.phys.Vec3;
 final class DisplayDemand {
     private static long smallSeen,largeSeen,lastSent;
     static String mode="Waiting";
+    static boolean wantsFrames;
     static void phone(){smallSeen=System.currentTimeMillis();}
     static void block(BlockPos pos,boolean large){
         var mc=Minecraft.getInstance();var camera=mc.gameRenderer.getMainCamera();
@@ -22,6 +23,7 @@ final class DisplayDemand {
         var mc=Minecraft.getInstance();boolean active=mc.level!=null&&!mc.isPaused();
         boolean focus=mc.screen instanceof BrowserScreen;
         boolean visible=active&&(focus||now-smallSeen<2500||now-largeSeen<2500);
+        wantsFrames=visible;
         boolean adaptive=DisplaySettings.INSTANCE.adaptive;
         int maxHeight=focus?1440:now-largeSeen<2500?1080:720;
         mode=!active||adaptive&&!visible?"Paused":!adaptive?"Manual":focus?"Focus":maxHeight==1080?"TV":"Small screen";
